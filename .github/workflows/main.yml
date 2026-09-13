@@ -1,1 +1,3207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radiant Wound Art RL</title>
+<meta name="description" content="Radiant Wound Art RL — my personal art portfolio. This website works best on computers.">
 
+<!-- Open Graph (Facebook, Discord, iMessage, WhatsApp, etc.) -->
+<meta property="og:title" content="Radiant Wound Art RL">
+<meta property="og:description" content="Radiant Wound Art RL — my personal art portfolio. This website works best on computers.">
+<meta property="og:image" content="images/cardwithframe.png">
+<meta property="og:image:alt" content="Radiant Wound Art RL preview card">
+<meta property="og:type" content="website">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Radiant Wound Art RL">
+<meta name="twitter:description" content="Radiant Wound Art RL — my personal art portfolio. This website works best on computers.">
+<meta name="twitter:image" content="images/cardwithframe.png">
+
+<link rel="icon" href="images/Favicon-RL.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============== HOMEPAGE ============== -->
+  <div class="frame-wrapper">
+    <img id="mode-toggle" src="images/SunMoon.png" alt="Toggle Light/Dark Mode" />
+
+    <div class="frame"></div>
+    <div class="frame-cover"></div>
+
+    <div class="hero-text">
+      <h1>Radiant Wound Art RL</h1>
+      <p>Welcome to my artist website!</p>
+      <h6>©RadiantWoundArt RubiL 2026</h6>
+    </div>
+
+    <img id="light-clouds" src="images/Light Purple Cloud.png" class="decor" alt="Light mode clouds" />
+    <img id="dark-clouds"  src="images/Dark Purple Cloud.png"  class="decor" alt="Dark mode clouds" />
+
+    <div class="hitbox hitbox-face">
+      <img id="center-face" src="images/Circle Face.png" alt="Face" />
+      <img id="eyes"        src="images/Eyes.png"        alt="Eyes" />
+    </div>
+
+    <div class="hitbox hitbox-links">
+      <img id="linkStar" src="images/Link Star.png" alt="Link Star" />
+    </div>
+
+    <div class="hitbox hitbox-scene">
+      <img id="scene"      src="images/Sunrise.png"   alt="Scene Image" />
+      <img id="scene-dark" src="images/Moonlight.png" alt="Dark Scene" />
+    </div>
+
+    <div class="hitbox hitbox-projects">
+      <img id="moreProjects" src="images/More Projects.png" alt="More Projects" />
+    </div>
+
+    <div class="sound-toggle">
+      <img src="images/Audio.png" alt="Toggle Sound" id="soundToggle" />
+    </div>
+
+    <div class="social-icons">
+      <a href="https://youtube.com/channel/UCtPtkwMcgg2aOupMYsTOkJQ" target="_blank" rel="noopener"><img src="images/Youtube.png" alt="YouTube" /></a>
+      <a href="https://www.instagram.com/radiantwoundartrl?igsh=aTFkbnVscGN2cDQ4" target="_blank" rel="noopener"><img src="images/Instagram.png" alt="Instagram" /></a>
+      <a href="https://www.tiktok.com/@radiantwoundartrl?lang=en" target="_blank" rel="noopener"><img src="images/TikTok.png" alt="TikTok" /></a>
+    </div>
+
+    <div class="sound-icon">
+      <img src="images/Music Stars.png" alt="Play Sound" id="music-stars" />
+    </div>
+
+    <audio id="bg-music" loop>
+      <source src="Audio Sound/melodic-electro-pop-beat-pop-music-charming-325237.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="clickSound" src="Audio Sound/pop-cartoon-328167.mp3"></audio>
+    <audio id="closeSound" src="Audio Sound/bubble-pop-389501.mp3"></audio>
+  </div>
+
+  <!-- ============== POPUP WINDOWS ============== -->
+  <div id="popup-layer">
+
+    <!-- ARTIST POPUP -->
+    <div id="facePopup" class="popup">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Artist</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+
+          <div class="popup-content artist-layout">
+
+            <div class="artist-top">
+              <div class="artist-figure">
+                <div class="meet-label">Meet the Artist</div>
+                <img src="images/Meet the artist (RL).png" alt="Artist illustration" />
+              </div>
+
+              <div class="artist-about">
+                <div class="artist-header">
+                  <div class="artist-name">RL</div>
+                  <div class="artist-pronouns">She/Her</div>
+                </div>
+
+                <div class="about-columns">
+                  <ul>
+                    <li>Digital &amp; traditional artist</li>
+                    <li>Loves cozy games</li>
+                    <li>Sketchbook everywhere</li>
+                    <li>Dreaming big always</li>
+                  </ul>
+                  <ul>
+                    <li>Coffee &amp; late night drawing</li>
+                    <li>Fantasy &amp; soft aesthetics</li>
+                    <li>Character design lover</li>
+                    <li>Storytelling through art</li>
+                  </ul>
+                </div>
+
+                <button id="artistMoreBtn" class="more-btn">More about me</button>
+
+                <div id="artistMoreText" class="artist-more">
+                  <p>
+                    Here you can write a longer bio, your story, goals, dreams,
+                    inspirations, favorite tools, or anything you want later.
+                    This section expands smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="artist-bag">
+              <h2>Inside my bag</h2>
+              <div class="bag-grid">
+                <div class="bag-item"><img src="images/Myphone.png" alt="Phone" /><span>Phone</span></div>
+                <div class="bag-item"><img src="images/Secondsketchbook.png" alt="Sketchbook" /><span>Traveling sketchbook</span></div>
+                <div class="bag-item"><img src="images/Headphones.png" alt="Headphones" /><span>Headphones</span></div>
+                <div class="bag-item"><img src="images/Instaxmini.png" alt="Camera" /><span>Instax Mini Camera</span></div>
+                <div class="bag-item"><img src="images/Mirror.png" alt="Mirror" /><span>Mirror</span></div>
+                <div class="bag-item"><img src="images/peachandv.png" alt="Plushies" /><span>Plushies</span></div>
+                <div class="bag-item"><img src="images/R.E.MLip.png" alt="REMLipstick" /><span>R.E.M Beauty Lip Oil Pickin Petals</span></div>
+                <div class="bag-item"><img src="images/Portablecharger.png" alt="Portablecharger" /><span>Portable Charger</span></div>
+                <div class="bag-item"><img src="images/Chargingcord.png" alt="Chargingcord" /><span>Charging Cord</span></div>
+                <div class="bag-item"><img src="images/Sketchbook.png" alt="Purplesketchbook" /><span>Purple Sketchbook</span></div>
+                <div class="bag-item"><img src="images/Glindajournal.png" alt="Glindajournal" /><span>Glinda Journal</span></div>
+                <div class="bag-item"><img src="images/purplemonkey.png" alt="Purplemonkey" /><span>Purple Plushie Monkey</span></div>
+                <div class="bag-item"><img src="images/Pencil.png" alt="Pencil" /><span>Metal Mechanical Pencil Set in Leather Case</span></div>
+              </div>
+
+              <div class="section-divider"></div>
+
+              <div class="artist-items">
+                <h2>Items I Enjoy Having</h2>
+                <div class="items-grid">
+                  <div class="more-item"><img src="images/PS4.png" alt="PS4" /><span>Playstation 4</span></div>
+                  <div class="more-item"><img src="images/CDgame.png" alt="CDGames" /><span>Two CDs Games</span></div>
+                  <div class="more-item"><img src="images/karaoke.png" alt="Karaokeset" /><span>Mini Karaoke Machine</span></div>
+                  <div class="more-item"><img src="images/HermioneWand.png" alt="Wand" /><span>Hermione Wand</span></div>
+                  <div class="more-item"><img src="images/Snowy owl.png" alt="Snowyowl" /><span>Snowy Owl Plushie</span></div>
+                  <div class="more-item"><img src="images/Lightboxandtablet.png" alt="LightboxandTablet" /><span>Tracing Light Box and Digital Tablet</span></div>
+                  <div class="more-item"><img src="images/Digitalpen.png" alt="digitalpen" /><span>Digital Pen</span></div>
+                  <div class="more-item"><img src="images/popskullpanda.png" alt="Popskullpanda" /><span>The Pensiveness</span></div>
+                  <div class="more-item"><img src="images/Sleepdreamlandelves.png" alt="sleepdreamelves" /><span>Dryad</span></div>
+                  <div class="more-item"><img src="images/Colorpencils.png" alt="Colorpencilandmore" /><span>Ohuhu Markers, Color Pencils, and Himi Gouache</span></div>
+                  <div class="more-item"><img src="images/dolls.png" alt="GlindaElphabaDraculaura" /><span>Dolls I have</span></div>
+                  <div class="more-item"><img src="images/Ari'sperfume.png" alt="Perfumes" /><span>My Ariana Grande Perfume Collections</span></div>
+                  <div class="more-item"><img src="images/Books.png" alt="Collectionofbooks" /><span>books I like</span></div>
+                </div>
+              </div>
+
+              <div class="section-divider"></div>
+
+              <div class="bag-extra-text">
+                <p>You can write anything about your tools, daily routine, favorite materials, or art process here later ✨</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- LINKS POPUP -->
+    <div id="linksPopup" class="popup">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Links</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+          <div class="popup-content">
+            <div class="links-bubble">New links &amp; content coming soon ✨</div>
+            <a href="https://youtube.com/channel/UCtPtkwMcgg2aOupMYsTOkJQ" target="_blank" rel="noopener"><img src="images/Youtube.png" alt="YouTube" /><span>YouTube</span></a>
+            <a href="https://www.instagram.com/radiantwoundartrl?igsh=aTFkbnVscGN2cDQ4" target="_blank" rel="noopener"><img src="images/Instagram.png" alt="Instagram" /><span>Instagram</span></a>
+            <a href="https://www.tiktok.com/@radiantwoundartrl?lang=en" target="_blank" rel="noopener"><img src="images/TikTok.png" alt="TikTok" /><span>TikTok</span></a>
+            <a href="https://patreon.com/purpleartworl" target="_blank" rel="noopener"><img src="images/Patreon.png" alt="Patreon" /><span>Patreon</span></a>
+            <a href="https://www.patreon.com/c/purpleartworl/shop" target="_blank" rel="noopener"><img src="images/Shop.png" alt="Shop" /><span>Shop</span></a>
+            <a href="https://artfol.app/@radiantwoundartrl" target="_blank" rel="noopener"><img src="images/Artfol.png" alt="Artfol" /><span>Artfol</span></a>
+            <a href="mailto:paintingwithrl@gmail.com?subject=Commission%20Request" target="_blank" rel="noopener"><img src="images/Document.png" alt="Commission Form" /><span>Commissions</span></a>
+            <a href="mailto:paintingwithrl@gmail.com" target="_blank" rel="noopener"><img src="images/Contacts.png" alt="Email" /><span>Email</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS POPUP -->
+    <div id="projectsPopup" class="popup">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Projects</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+
+          <div class="popup-content projects-desktop">
+
+            <div class="projects-toolbar">
+              <button id="projectsBackBtn" style="display:none;">
+                <img src="images/Left.png" alt="Back" />
+              </button>
+            </div>
+
+            <div id="projectsHome" class="projects-page active">
+              <div class="folder-grid">
+                <div class="folder" onclick="openProjectPage('proj1', this)">
+                  <div class="folder-icon">
+                    <img class="folder-closed" src="images/Closefolder.png" alt="" />
+                    <img class="folder-open"   src="images/Openfolder.png"  alt="" />
+                  </div>
+
+                  <span>Advertising Design</span>
+                </div>
+                <div class="folder" onclick="openProjectPage('proj2', this)">
+                  <div class="folder-icon">
+                    <img class="folder-closed" src="images/Closefolder.png" alt="" />
+                    <img class="folder-open"   src="images/Openfolder.png"  alt="" />
+                  </div>
+
+                  <span>Coding Projects</span>
+                </div>
+                <div class="folder" onclick="openProjectPage('proj3', this)">
+                  <div class="folder-icon">
+                    <img class="folder-closed" src="images/Closefolder.png" alt="" />
+                    <img class="folder-open"   src="images/Openfolder.png"  alt="" />
+                  </div>
+
+                  <span>Clay</span>
+                </div>
+                <div class="folder" onclick="openProjectPage('proj4', this)">
+                  <div class="folder-icon">
+                    <img class="folder-closed" src="images/Closefolder.png" alt="" />
+                    <img class="folder-open"   src="images/Openfolder.png"  alt="" />
+                  </div>
+
+                  <span>Comic Projects</span>
+                </div>
+                <div class="folder" onclick="openProjectPage('proj5', this)">
+                  <div class="folder-icon">
+                    <img class="folder-closed" src="images/Closefolder.png" alt="" />
+                    <img class="folder-open"   src="images/Openfolder.png"  alt="" />
+                  </div>
+
+                  <span>OC Stories</span>
+                </div>
+                <div class="folder" onclick="openProjectPage('proj6', this)">
+                  <div class="folder-icon">
+                    <img class="folder-closed" src="images/Closefolder.png" alt="" />
+                    <img class="folder-open"   src="images/Openfolder.png"  alt="" />
+                  </div>
+                  <span>Own Music</span>
+                </div>
+
+                <div class="folder app-icon" onclick="openPaintApp()"><img src="images/Paintingicon.png" alt="" /><span>Paint</span></div>
+                <div class="folder app-icon" onclick="openNotesApp()"><img src="images/Notepad.png" alt="" /><span>Notes</span></div>
+                <div class="folder app-icon" onclick="openPetApp()"><img src="images/Pet.png" alt="" /><span>Pet</span></div>
+                <div class="folder app-icon" onclick="openFeedbackApp()"><img src="images/Feedback.png" alt="" /><span>Feedback</span></div>
+                <div class="folder app-icon" onclick="openGoalApp()"><img src="images/Goal.png" alt="" /><span>Savings Goals</span></div>
+                <div class="folder app-icon" onclick="openSettingsApp()"><img src="images/Settings.png" alt="" /><span>Settings</span></div>
+              </div>
+            </div>
+
+            <div id="proj1" class="projects-page">
+              <h2>Advertising Design</h2>
+              <p>I Have 3 Years Experience In Advertising Design.</p>
+              <img src="My artwork/Front cover of the forest magazine.png" alt="" />
+              <img src="My artwork/back cover of the forest magazine.png"  alt="" />
+              <img src="My artwork/D of advertisingalien.jpeg"             alt="" />
+              <img src="My artwork/Posterdesign.jpg"                       alt="" />
+              <img src="My artwork/Bookcoverdesign.jpg"                    alt="" />
+            </div>
+
+            <div id="proj2" class="projects-page">
+              <h2>Coding Projects</h2>
+              <p>Working On Projects To Put Here.</p>
+              <button class="load-btn" onclick="loadText('text-files/coding-projects.txt','codingText')">Read Coding Projects</button>
+              <div id="codingText" class="text-viewer"></div>
+            </div>
+
+            <div id="proj3" class="projects-page">
+              <h2>Clay</h2>
+              <p>Images Will Be Here On December.</p>
+            </div>
+
+            <div id="proj4" class="projects-page">
+              <h2>Comic Projects</h2>
+              <p>Nothing Yet To Share Here.</p>
+            </div>
+
+            <div id="proj5" class="projects-page">
+              <h2>OC Stories</h2>
+              <p>At This Moment I'm Working On Their Stories.</p>
+              <button class="load-btn" onclick="loadText('text-files/oc-story-1.txt','storyText')">Read Story</button>
+              <div id="storyText" class="text-viewer"></div>
+            </div>
+
+            <div id="proj6" class="projects-page">
+              <h2>Own Music</h2>
+              <p>At The Moment There Is Nothing for Me To Play.</p>
+              <div class="music-card">
+                <img src="images/Playicon.png" class="play-btn"
+                     data-song="song1"
+                     data-play="images/Playicon.png"
+                     data-pause="images/Pauseicon.png"
+                     alt="Play" />
+                <div>
+                  <strong>My First Song</strong><br />
+                  <small>2026 Demo</small>
+                </div>
+              </div>
+              <audio id="song1" src="Audio Sound/Rusi - title of your mind.m4a"></audio>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SCENE / ARTWORK POPUP -->
+    <div id="scenePopup" class="popup">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Artwork</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+
+          <div class="popup-content">
+            <div class="gallery-section">
+              <h2 class="gallery-title">Paintings</h2>
+              <div class="gallery-grid">
+                <img src="My artwork/Colorfuleyeheartpainting.jpeg" class="gallery-item" alt="" />
+                <img src="My artwork/paintinginprocess.jpg"         class="gallery-item" alt="" />
+                <img src="My artwork/Theshiningstar_edited.jpeg"    class="gallery-item" alt="" />
+                <img src="My artwork/paintingofaloveone.jpeg"       class="gallery-item" alt="" />
+              </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="gallery-section">
+              <h2 class="gallery-title">Digital Art</h2>
+              <div class="gallery-grid">
+                <img src="My artwork/stickerofmypandadesign.PNG" class="gallery-item" alt="" />
+                <img src="My artwork/backgroundscene.png"       class="gallery-item" alt="" />
+                <img src="My artwork/Banner image.png"          class="gallery-item" alt="" />
+              </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <div class="gallery-section">
+              <h2 class="gallery-title">Videos</h2>
+              <div class="gallery-grid">
+                <video class="gallery-item" controls>
+                  <source src="My artwork/Planets girl.mp4" type="video/mp4" />
+                </video>
+                <video class="gallery-item" controls>
+                  <source src="My artwork/Animation unisad.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SAVINGS GOAL APP -->
+    <div id="goalApp" class="popup mini-app">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Savings Goals</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+          <div class="popup-content goal-content">
+
+            <div id="goalLockScreen" class="notes-lock">
+              <p id="goalLockMsg"><img src="images/Lock.png" alt="" class="inline-icon" /> Savings goals are private.</p>
+              <input type="password" id="goalPassword" placeholder="Enter password" />
+              <div class="notes-actions">
+                <button type="button" id="goalUnlockBtn">Unlock</button>
+                <button type="button" id="goalSetPwBtn" style="display:none;">Set password</button>
+              </div>
+              <small id="goalLockStatus" class="small-status"></small>
+            </div>
+
+            <div id="goalEditor" class="goal-editor" style="display:none;">
+              <div class="goal-editor-top">
+                <button type="button" id="goalNewBtn">+ New goal</button>
+                <button type="button" id="goalLockBtn">Lock</button>
+              </div>
+              <div id="goalList" class="goal-list"></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PAINT APP -->
+    <div id="paintApp" class="popup mini-app">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Paint</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+          <div class="popup-content paint-content">
+            <div class="paint-tools">
+              <label>Color: <input type="color" id="colorPicker" value="#a07cc5" /></label>
+              <label>Brush: <input type="range" id="brushSize" min="1" max="40" value="5" /></label>
+              <button type="button" onclick="clearCanvas()">Clear</button>
+              <button type="button" onclick="saveCanvas()">Save PNG</button>
+            </div>
+            <canvas id="paintCanvas" width="600" height="400"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- NOTES APP -->
+    <div id="notesApp" class="popup mini-app">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Notes</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+          <div class="popup-content notes-content">
+
+            <div id="notesLockScreen" class="notes-lock">
+              <p id="notesLockMsg"><img src="images/Lock.png" alt="" class="inline-icon" /> These notes are private.</p>
+              <input type="password" id="notesPassword" placeholder="Enter password" />
+              <div class="notes-actions">
+                <button type="button" id="notesUnlockBtn">Unlock</button>
+                <button type="button" id="notesSetPwBtn" style="display:none;">Set password</button>
+              </div>
+              <small id="notesLockStatus" class="small-status"></small>
+            </div>
+
+            <div id="notesEditor" class="notes-editor" style="display:none;">
+
+              <div id="notesListPage" class="notes-page active">
+                <div class="notes-toolbar">
+                  <button type="button" id="newNoteBtn">+ New note</button>
+                  <button type="button" id="lockNotesBtn">Lock</button>
+                </div>
+                <div id="notesList" class="notes-list"></div>
+              </div>
+
+              <div id="notesDetailPage" class="notes-page">
+                <div class="notes-toolbar">
+                </div>
+
+                <textarea id="notesArea" placeholder="Write your thoughts here..."></textarea>
+
+                <div class="sticky-colors">
+                  <span>Sticky color:</span>
+                  <button class="color-swatch" data-color="#fff7a8"></button>
+                  <button class="color-swatch" data-color="#ffd6e7"></button>
+                  <button class="color-swatch" data-color="#d6ffd9"></button>
+                  <button class="color-swatch" data-color="#d6e4ff"></button>
+                  <button class="color-swatch" data-color="#f9d6ff"></button>
+                </div>
+
+                <div class="notes-actions">
+                  <button type="button" id="notesBackBtn">
+                    <img src="images/Left.png" alt="Back" style="height:18px;vertical-align:middle;" /> Back
+                  </button>
+                  <button type="button" id="saveNoteBtn">Save</button>
+                  <button type="button" id="pinNoteBtn"><img src="images/Pin.png" alt="" class="inline-icon" />Show on home</button>
+                  <button type="button" id="deleteNoteBtn" class="danger">Delete</button>
+                  <span id="notesStatus" class="small-status"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- PET APP -->
+<div id="petApp" class="popup mini-app">
+  <div class="popup-frame">
+    <div class="popup-body">
+      <div class="popup-header">
+        <span>Pet</span>
+        <img src="images/Close Button.png" class="close-btn" alt="Close" />
+      </div>
+      <div class="popup-content pet-content">
+        <div class="pet-help-wrap">
+          <button type="button" id="petHelpBtn" class="pet-help-btn" aria-label="About this app">?</button>
+          <div id="petHelpTooltip" class="pet-help-tooltip">
+            I will update this app later on in the future, and it will have actual house pets as well, but for now I will have this.
+          </div>
+        </div>
+
+        <div class="pet-stage">
+          <img id="pet" src="images/Pet.png" alt="Click your pet!" />
+        </div>
+        <div class="pet-mood">Mood: <span id="petMood">Happy</span></div>
+        <p class="pet-hint">Click the pet to change its mood</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- FEEDBACK APP -->
+    <div id="feedbackApp" class="popup mini-app">
+      <div class="popup-frame">
+        <div class="popup-body">
+          <div class="popup-header">
+            <span>Feedback</span>
+            <img src="images/Close Button.png" class="close-btn" alt="Close" />
+          </div>
+          <div class="popup-content feedback-content">
+            <form id="feedbackForm">
+              <label>Name<input type="text" id="fbName" required /></label>
+              <label>Email<input type="email" id="fbEmail" required /></label>
+              <label>Message<textarea id="fbMessage" rows="5" required></textarea></label>
+              <button type="submit">Send</button>
+              <div id="fbStatus" class="small-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- ============== SETTINGS APP ============== -->
+<div id="rwaSettingsOverlay" class="popup mini-app">
+  <div class="popup-frame">
+    <div class="popup-body">
+
+      <div class="popup-header">
+        <span>Settings</span>
+        <img src="images/Close Button.png" id="rwaCloseBtn" class="close-btn" alt="Close" />
+      </div>
+
+      <div id="rwaSetRoot" class="popup-content settings-content">
+
+        <!-- hidden file input for Import -->
+        <input type="file" id="rwaImportFile" accept="application/json" hidden />
+
+        <!-- ===== LOCK PAGE (shown ALONE while locked) ===== -->
+        <div id="rwaLock" class="rwa-lock-screen">
+          <img class="rwa-lock-icon" src="images/Lock.png" alt="" />
+          <p id="rwaLockMsg" class="rwa-lock-msg">Settings are private.</p>
+          <input type="password" id="rwaPassword" class="rwa-lock-input" placeholder="Enter password" />
+          <div class="rwa-lock-actions">
+            <button type="button" id="rwaUnlockBtn" class="rwa-lock-btn">Unlock</button>
+            <button type="button" id="rwaSetPwBtn" class="rwa-lock-btn" style="display:none;">Set password</button>
+          </div>
+          <small id="rwaLockStatus" class="small-status"></small>
+        </div>
+
+        <!-- ===== PANEL (shown ALONE while unlocked) ===== -->
+        <div id="rwaPanel" class="rwa-set-panel rwa-locked">
+
+          <!-- desktop sidebar -->
+          <aside class="rwa-sidebar">
+            <span class="rwa-sidebar-label">SETTINGS</span>
+            <nav class="rwa-sidebar-nav"></nav>
+            <div class="rwa-sidebar-footer"></div>
+          </aside>
+
+          <!-- desktop content panel -->
+          <section class="rwa-main-panel">
+            <header class="rwa-main-head">
+              <h2 id="rwaMainTitle">Web Theme</h2>
+              <p id="rwaMainSub" class="rwa-main-sub"></p>
+            </header>
+            <div class="rwa-main-body"></div>
+          </section>
+
+          <!-- portrait phone / tablet (built by JS: list OR detail, never both) -->
+          <section class="rwa-mobile-view"></section>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <!-- /#popup-layer -->
+
+
+  <!-- ============== HOMEPAGE OVERLAYS ============== -->
+  <div id="stickyLayer"></div>
+  <div id="goalWidgetLayer"></div>
+
+
+  <!-- ============== FULLSCREEN VIEWER ============== -->
+  <div id="viewer" class="viewer hidden" oncontextmenu="return false;">
+    <img id="viewerClose" src="images/Close Button.png" alt="Close" />
+    <div id="viewerStage">
+      <img id="viewerImg" alt="" draggable="false" />
+      <video id="viewerVideo" controls controlsList="nodownload noremoteplayback" disablepictureinpicture></video>
+      <img id="viewerWatermark" src="images/My Signature (RL).png" alt="" draggable="false" />
+      <div id="viewerShield"></div>
+    </div>
+  </div>
+
+
+  <!-- ============== DESKTOP NOTICE (mobile/tablet only) ============== -->
+  <div id="desktopNotice" class="desktop-notice hidden">
+    <div class="desktop-notice-box">
+      <p>This website works best on computers.</p>
+      <button type="button" id="desktopNoticeOk">Ok</button>
+    </div>
+  </div>
+
+  <!-- Floating Spotify mini-player (appears on 3-star triple-click) -->
+<div id="rwaSpotifyMini">
+  <div class="rwa-sp-head">
+     <span>Spotify · double-click bar to pin</span>
+    <button class="rwa-sp-close" type="button" aria-label="Close">×</button>
+  </div>
+  <iframe allow="encrypted-media" loading="lazy"></iframe>
+</div>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  /* ---------- WINDOW Z-INDEX ---------- */
+  let topZ = 1000000;
+  function bringPopupToFront(popup){ topZ += 1; popup.style.zIndex = topZ; }
+
+  /* ---------- SOUND ---------- */
+  const clickSound  = document.getElementById("clickSound");
+  const closeSound  = document.getElementById("closeSound");
+  const music       = document.getElementById("bg-music");
+  const soundToggle = document.getElementById("soundToggle");
+  const musicStars  = document.getElementById("music-stars");
+  const SOUND_ICON_ON  = "images/Audio.png";
+  const SOUND_ICON_OFF = "images/No Audio.png";
+  let soundEnabled = localStorage.getItem("rwa-sound") !== "off";
+
+  function applySoundState(){
+    document.querySelectorAll("audio, video").forEach(a => { a.muted = !soundEnabled; });
+    if (soundToggle){
+      soundToggle.src = soundEnabled ? SOUND_ICON_ON : SOUND_ICON_OFF;
+      soundToggle.classList.toggle("muted", !soundEnabled);
+    }
+  }
+  applySoundState();
+
+  function playClick(){ if (!soundEnabled || !clickSound) return; clickSound.currentTime = 0; clickSound.play().catch(()=>{}); }
+  function playClose(){ if (!soundEnabled || !closeSound) return; closeSound.currentTime = 0; closeSound.play().catch(()=>{}); }
+
+  soundToggle?.addEventListener("click", () => {
+    soundEnabled = !soundEnabled;
+    localStorage.setItem("rwa-sound", soundEnabled ? "on" : "off");
+    applySoundState();
+  });
+  musicStars?.addEventListener("click", () => {
+    if (!music) return;
+    if (music.paused) music.play().catch(()=>{}); else music.pause();
+  });
+  music?.addEventListener("play",  () => musicStars?.classList.add("active"));
+  music?.addEventListener("pause", () => musicStars?.classList.remove("active"));
+
+  /* ---------- DARK MODE ---------- */
+  if (localStorage.getItem("rwa-mode") === "dark") document.body.classList.add("dark");
+  document.getElementById("mode-toggle")?.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    localStorage.setItem("rwa-mode", document.body.classList.contains("dark") ? "dark" : "light");
+    playClick();
+  });
+
+  /* ---------- EYES ---------- */
+  const eyes = document.getElementById("eyes");
+  const face = document.querySelector(".hitbox-face");
+  if (eyes && face){
+    document.addEventListener("mousemove", (e) => {
+      const r = face.getBoundingClientRect();
+      const cx = r.left + r.width/2, cy = r.top + r.height/2;
+      const dx = e.clientX - cx, dy = e.clientY - cy;
+      const mx = Math.max(-14, Math.min(14, dx * 0.04));
+      const my = Math.max(-6,  Math.min(6,  dy * 0.025));
+      eyes.style.transform = `translate(${mx}px, ${my}px)`;
+    });
+  }
+
+  function isPhoneOrTablet(){ return window.innerWidth <= 1024; }
+  function isPhoneScreen(){ return window.innerWidth <= 700; }
+
+  /* ---------- MOBILE DOWN-ARROW IN POPUP HEADERS ---------- */
+  document.querySelectorAll(".popup .popup-header").forEach((header) => {
+    if (header.querySelector(".mobile-close")) return;
+    const arrow = document.createElement("img");
+    arrow.src = "images/twodownarrows.png";
+    arrow.alt = "Close"; arrow.className = "mobile-close";
+    header.insertBefore(arrow, header.firstChild);
+    arrow.addEventListener("click", (e) => { e.stopPropagation(); closeWindow(header.closest(".popup")); });
+  });
+
+  /* ---------- POPUP WINDOWS ---------- */
+  function syncBodyState(){
+    document.body.classList.toggle("popup-open", !!document.querySelector(".popup.active"));
+  }
+  function openWindow(id){
+    const el = document.getElementById(id);
+    if (!el) return;
+    if (isPhoneOrTablet()){
+      document.querySelectorAll(".popup.active").forEach(p => { if (p !== el) p.classList.remove("active"); });
+    }
+    el.classList.add("active");
+    bringPopupToFront(el);
+    if (!el.dataset.centered){
+      el.style.left = "50%"; el.style.top = "50%";
+      el.style.transform = "translate(-50%,-50%)";
+      el.dataset.centered = "true";
+    }
+    syncBodyState(); playClick();
+  }
+  
+function closeWindow(el){
+  if (!el) return;
+  el.classList.remove("active");
+  syncBodyState(); playClose();
+  document.querySelectorAll(".sticky-note").forEach(s => {
+    s.classList.remove("dragging");
+    try { if (s.hasPointerCapture && s._pid) s.releasePointerCapture(s._pid); } catch {}
+  });
+  el.querySelectorAll("textarea, input, [contenteditable='true']").forEach(t => { try { t.blur(); } catch {} });
+  if (document.activeElement && el.contains(document.activeElement)) { try { document.activeElement.blur(); } catch {} }
+  const sel = window.getSelection && window.getSelection();
+  if (sel && sel.removeAllRanges) sel.removeAllRanges();
+  document.body.style.userSelect = "";
+  document.body.style.webkitUserSelect = "";
+}
+
+document.querySelectorAll(".popup .close-btn").forEach(btn => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    closeWindow(btn.closest(".popup"));
+  });
+});
+
+  /* ---------- DRAG POPUP WINDOWS (desktop only) ---------- */
+  document.querySelectorAll(".popup").forEach((popup) => {
+    const header = popup.querySelector(".popup-header");
+    let drag=false, ox=0, oy=0;
+    header?.addEventListener("mousedown", (e) => {
+      if (isPhoneOrTablet()) return;
+      if (e.target.closest(".close-btn") || e.target.closest(".mobile-close")) return;
+      drag = true;
+      const r = popup.getBoundingClientRect();
+      ox = e.clientX - r.left; oy = e.clientY - r.top;
+      bringPopupToFront(popup);
+    });
+
+document.querySelectorAll(".popup").forEach((popup) => {
+  popup.addEventListener("mousedown", () => bringPopupToFront(popup));
+});
+
+    document.addEventListener("mousemove", (e) => {
+      if (!drag || isPhoneOrTablet()) return;
+      popup.style.left = e.clientX - ox + "px";
+      popup.style.top  = e.clientY - oy + "px";
+      popup.style.transform = "none";
+    });
+    document.addEventListener("mouseup", () => (drag = false));
+  });
+
+  /* ---------- HITBOXES ---------- */
+  document.querySelector(".hitbox-face")    ?.addEventListener("click", () => openWindow("facePopup"));
+  document.querySelector(".hitbox-links")   ?.addEventListener("click", () => openWindow("linksPopup"));
+  document.querySelector(".hitbox-scene")   ?.addEventListener("click", () => openWindow("scenePopup"));
+  document.querySelector(".hitbox-projects")?.addEventListener("click", () => openWindow("projectsPopup"));
+
+  /* ---------- FULLSCREEN VIEWER ---------- */
+  const viewer      = document.getElementById("viewer");
+  const viewerImg   = document.getElementById("viewerImg");
+  const viewerVideo = document.getElementById("viewerVideo");
+  const viewerClose = document.getElementById("viewerClose");
+
+  function openViewer(src, type){
+    viewer.classList.remove("hidden");
+    viewer.style.pointerEvents = "auto";
+    document.body.style.overflow = "hidden";
+    if (type === "img"){
+      viewerImg.src = src;
+      viewerImg.style.display = "block"; viewerVideo.style.display = "none";
+      viewerVideo.pause();
+    }
+    if (type === "video"){
+      viewerVideo.src = src;
+      viewerVideo.style.display = "block"; viewerImg.style.display = "none";
+      viewerVideo.play().catch(()=>{});
+    }
+  }
+  function closeViewer(){
+    viewer.classList.add("hidden");
+    document.body.style.overflow = "";
+    viewerVideo.pause(); viewerVideo.currentTime = 0;
+  }
+  function wireGalleryItem(item){
+    item.addEventListener("click", (e) => {
+      if (item.tagName === "VIDEO"){
+        const src = item.currentSrc || item.querySelector("source")?.src;
+        if (src){ item.pause(); openViewer(src, "video"); e.preventDefault(); }
+      } else if (item.tagName === "IMG"){
+        openViewer(item.src, "img");
+      }
+    });
+  }
+  document.querySelectorAll(".gallery-item").forEach(wireGalleryItem);
+  viewerClose?.addEventListener("click", (e) => { e.stopPropagation(); closeViewer(); });
+
+  /* ---------- AUTO-WRAP PROJECT MEDIA ---------- */
+ function createFolderMediaCard(item){
+  if (item.closest(".folder-media-card")) return null;
+
+  const card = document.createElement("article");
+  const preview = document.createElement("div");
+
+  card.className = "folder-media-card";
+  preview.className = "folder-media-preview";
+
+  if (item.tagName === "IMG" || item.tagName === "VIDEO"){
+    item.classList.add("gallery-item");
+
+    /* Videos open in the existing fullscreen viewer */
+    if (item.tagName === "VIDEO"){
+      item.controls = false;
+      item.setAttribute("playsinline", "");
+      item.preload = "metadata";
+    }
+
+    preview.appendChild(item);
+    wireGalleryItem(item);
+  } else {
+    const filePreview = document.createElement("div");
+    filePreview.className = "folder-file-preview";
+    filePreview.textContent = "FILE";
+
+    preview.appendChild(filePreview);
+    item.classList.add("folder-file");
+    card.appendChild(item);
+  }
+
+  card.appendChild(preview);
+  return card;
+}
+
+function arrangeProjectFolderMedia(page){
+  if (!page || page.id === "projectsHome") return;
+
+  const mediaItems = Array.from(page.children).filter(item =>
+    (
+      item.tagName === "IMG" ||
+      item.tagName === "VIDEO" ||
+      (item.tagName === "A" && item.classList.contains("folder-file"))
+    ) &&
+    !item.classList.contains("play-btn")
+  );
+
+  if (!mediaItems.length) return;
+
+  let grid = page.querySelector(":scope > .folder-media-grid");
+  if (!grid){
+    grid = document.createElement("div");
+    grid.className = "folder-media-grid";
+    page.appendChild(grid);
+  }
+
+  mediaItems.forEach(item => {
+    const card = createFolderMediaCard(item);
+    if (card) grid.appendChild(card);
+  });
+}
+
+function arrangeAllProjectFolderMedia(){
+  document
+    .querySelectorAll("#projectsPopup .projects-page")
+    .forEach(arrangeProjectFolderMedia);
+}
+
+/* Arrange the folders that already exist */
+arrangeAllProjectFolderMedia();
+
+/* Also arrange content added to future folders */
+const projectsContent = document.querySelector("#projectsPopup .projects-desktop");
+
+if (projectsContent){
+  const folderMediaObserver = new MutationObserver(() => {
+    arrangeAllProjectFolderMedia();
+  });
+
+  folderMediaObserver.observe(projectsContent, {
+    childList: true,
+    subtree: true
+  });
+}
+
+/* ---------- BACK BUTTON ---------- */
+
+const backBtn = document.getElementById("projectsBackBtn");
+
+window.openProjectPage = function(pageId, folder){
+  document.querySelectorAll("#projectsPopup .projects-page").forEach(p => p.classList.remove("active"));
+  document.getElementById(pageId)?.classList.add("active");
+
+  document.querySelectorAll("#projectsPopup .folder").forEach(f => f.classList.remove("open"));
+  folder?.classList.add("open");
+
+  if (backBtn) backBtn.style.display = "block";
+
+  playClick();
+};
+
+if (backBtn){
+  backBtn.onclick = () => {
+    document.querySelectorAll("#projectsPopup .projects-page").forEach(p => p.classList.remove("active"));
+    document.getElementById("projectsHome").classList.add("active");
+
+    document.querySelectorAll("#projectsPopup .folder").forEach(f => f.classList.remove("open"));
+
+    backBtn.style.display = "none";
+
+    playClose();
+  };
+}
+
+  /* ---------- "More about me" ---------- */
+  document.getElementById("artistMoreBtn")?.addEventListener("click", () => {
+    document.getElementById("artistMoreText")?.classList.toggle("open");
+  });
+
+   /* ---------- MINI APPS ---------- */
+  window.openPaintApp    = () => openWindow("paintApp");
+  window.openNotesApp    = () => openWindow("notesApp");
+  window.openPetApp      = () => openWindow("petApp");
+  window.openFeedbackApp = () => openWindow("feedbackApp");
+
+  // expose the shared window helpers so the Settings module uses the exact same ones
+  window.openWindow  = openWindow;
+  window.closeWindow = closeWindow;
+
+
+  /* ---------- PAINT ---------- */
+  const canvas = document.getElementById("paintCanvas");
+if (canvas){
+  const ctx = canvas.getContext("2d");
+  const color = document.getElementById("colorPicker");
+  const size  = document.getElementById("brushSize");
+  let paint=false, lastX=0, lastY=0;
+
+  function paintWhiteBackground(){
+    ctx.save();
+    ctx.globalCompositeOperation = "source-over";
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
+  }
+
+  // Match the internal pixel buffer to the displayed CSS size.
+  // Preserve any existing drawing across resizes.
+  function fitCanvas(){
+    const rect = canvas.getBoundingClientRect();
+    const dpr  = window.devicePixelRatio || 1;
+    const targetW = Math.max(1, Math.round(rect.width  * dpr));
+    const targetH = Math.max(1, Math.round(rect.height * dpr));
+    if (canvas.width === targetW && canvas.height === targetH) return;
+
+    // Save current pixels to restore after resize
+    let snapshot = null;
+    if (canvas.width && canvas.height){
+      snapshot = document.createElement("canvas");
+      snapshot.width = canvas.width; snapshot.height = canvas.height;
+      snapshot.getContext("2d").drawImage(canvas, 0, 0);
+    }
+
+    canvas.width  = targetW;
+    canvas.height = targetH;
+    paintWhiteBackground();
+
+    if (snapshot){
+      ctx.drawImage(snapshot, 0, 0, snapshot.width, snapshot.height,
+                              0, 0, canvas.width,  canvas.height);
+    }
+    // Scale drawing so 1 CSS px = 1 logical unit
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+
+  // Initial white fill + size to display
+  requestAnimationFrame(fitCanvas);
+  window.addEventListener("resize", fitCanvas);
+  // Also refit when the paint popup is opened (size changes from display:none)
+  const paintObserver = new MutationObserver(() => {
+    if (document.getElementById("paintApp")?.classList.contains("active")){
+      requestAnimationFrame(fitCanvas);
+    }
+  });
+  paintObserver.observe(document.getElementById("paintApp"), { attributes: true, attributeFilter: ["class"] });
+
+  function startDraw(x,y){ paint=true; lastX=x; lastY=y; }
+  function doDraw(x,y){
+    if (!paint) return;
+    ctx.lineWidth = size.value;
+    ctx.strokeStyle = color.value;
+    ctx.lineCap = "round";
+    ctx.lineJoin = "round";
+    ctx.beginPath();
+    ctx.moveTo(lastX,lastY);
+    ctx.lineTo(x,y);
+    ctx.stroke();
+    lastX=x; lastY=y;
+  }
+  function endDraw(){ paint=false; }
+
+  canvas.addEventListener("mousedown",  e => startDraw(e.offsetX, e.offsetY));
+  canvas.addEventListener("mousemove",  e => doDraw(e.offsetX, e.offsetY));
+  canvas.addEventListener("mouseup",    endDraw);
+  canvas.addEventListener("mouseleave", endDraw);
+  canvas.addEventListener("touchstart", e => {
+    const r=canvas.getBoundingClientRect(), t=e.touches[0];
+    startDraw(t.clientX-r.left, t.clientY-r.top); e.preventDefault();
+  }, {passive:false});
+  canvas.addEventListener("touchmove", e => {
+    const r=canvas.getBoundingClientRect(), t=e.touches[0];
+    doDraw(t.clientX-r.left, t.clientY-r.top); e.preventDefault();
+  }, {passive:false});
+  canvas.addEventListener("touchend", endDraw);
+
+  window.clearCanvas = () => {
+    ctx.setTransform(1,0,0,1,0,0);
+    paintWhiteBackground();
+    const dpr = window.devicePixelRatio || 1;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  };
+  window.saveCanvas  = () => {
+    const link = document.createElement("a");
+    link.download = "my-painting.png";
+    link.href = canvas.toDataURL("image/png");
+    link.click();
+  };
+}
+
+  /* =========================================================
+     NOTES APP — list + detail + home stickies
+  ========================================================= */
+  const PW_KEY    = "rwa-notes-pw";
+  const NOTES_KEY = "rwa-notes-v2";
+
+  const lockScreen  = document.getElementById("notesLockScreen");
+  const editor      = document.getElementById("notesEditor");
+  const pwInput     = document.getElementById("notesPassword");
+  const unlockBtn   = document.getElementById("notesUnlockBtn");
+  const setPwBtn    = document.getElementById("notesSetPwBtn");
+  const lockBtn     = document.getElementById("lockNotesBtn");
+  const lockMsg     = document.getElementById("notesLockMsg");
+  const lockStatus  = document.getElementById("notesLockStatus");
+  const listPage    = document.getElementById("notesListPage");
+  const detailPage  = document.getElementById("notesDetailPage");
+  const notesListEl = document.getElementById("notesList");
+  const newNoteBtn  = document.getElementById("newNoteBtn");
+  const notesBackEl = document.getElementById("notesBackBtn");
+  const notesArea   = document.getElementById("notesArea");
+  const saveBtn     = document.getElementById("saveNoteBtn");
+  const pinBtn      = document.getElementById("pinNoteBtn");
+  const delBtn      = document.getElementById("deleteNoteBtn");
+  const nStat       = document.getElementById("notesStatus");
+  const stickyLayer = document.getElementById("stickyLayer");
+
+  let currentNoteId = null;
+
+  function escapeHtml(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+  function escapeAttr(s){ return escapeHtml(s); }
+  function loadNotes(){ try{ return JSON.parse(localStorage.getItem(NOTES_KEY) || "[]"); }catch{ return []; } }
+  function saveNotesArr(arr){ localStorage.setItem(NOTES_KEY, JSON.stringify(arr)); renderHomeStickies(); }
+  function patchNote(id, patch, opts = {}){
+  const arr = loadNotes().map(n => n.id===id ? {...n, ...patch} : n);
+  localStorage.setItem(NOTES_KEY, JSON.stringify(arr));
+  if (!opts.skipRender) renderHomeStickies();}
+  function removeNote(id){ saveNotesArr(loadNotes().filter(n => n.id !== id)); }
+
+  /* one-time migration from old keys */
+  (function migrate(){
+    if (localStorage.getItem(NOTES_KEY)) return;
+    const old = localStorage.getItem("myNotes");
+    let extras = [];
+    try{ extras = JSON.parse(localStorage.getItem("rwa-extra-stickies") || "[]"); }catch{}
+    const arr = [];
+    if (old) arr.push({
+      id:"n_"+Date.now(), text:old,
+      color: localStorage.getItem("rwa-sticky-color") || "#fff7a8",
+      visible: localStorage.getItem("rwa-sticky-visible") === "1",
+      pinned:  localStorage.getItem("rwa-sticky-locked")  === "1",
+      x:60, y:140
+    });
+    extras.forEach(e => arr.push({
+      id:e.id, text:e.text||"", color:e.color||"#fff7a8",
+      visible:true, pinned:false, x:e.x, y:e.y, w:e.w, h:e.h
+    }));
+    if (arr.length) localStorage.setItem(NOTES_KEY, JSON.stringify(arr));
+  })();
+
+  function showLocked(){
+    const hasPw = !!localStorage.getItem(PW_KEY);
+    const ico = '<img src="images/Lock.png" alt="" class="inline-icon" />';
+    lockMsg.innerHTML = hasPw ? `${ico} These notes are private.` : `${ico} Set a password to protect your notes.`;
+    unlockBtn.style.display = hasPw ? "inline-block" : "none";
+    setPwBtn.style.display  = hasPw ? "none" : "inline-block";
+    lockScreen.style.display = "flex"; editor.style.display = "none";
+    if (pwInput){ pwInput.value=""; pwInput.focus(); }
+  }
+  function showEditor(){ lockScreen.style.display="none"; editor.style.display="flex"; goToList(); }
+  if (lockScreen && editor) showLocked();
+
+  unlockBtn?.addEventListener("click", () => {
+    if (pwInput.value === localStorage.getItem(PW_KEY)){ lockStatus.innerText=""; showEditor(); }
+    else lockStatus.innerText = "Wrong password ✕";
+  });
+  setPwBtn?.addEventListener("click", () => {
+    if (!pwInput.value){ lockStatus.innerText="Pick a password first"; return; }
+    localStorage.setItem(PW_KEY, pwInput.value);
+    lockStatus.innerText="Password set ✓";
+    setTimeout(showEditor, 400);
+  });
+  pwInput?.addEventListener("keydown", e => {
+    if (e.key==="Enter") (localStorage.getItem(PW_KEY)?unlockBtn:setPwBtn).click();
+  });
+  lockBtn?.addEventListener("click", showLocked);
+
+  function goToList(){
+    detailPage.classList.remove("active");
+    listPage.classList.add("active");
+    currentNoteId = null;
+    renderList();
+  }
+  function goToDetail(id){
+    const n = loadNotes().find(x => x.id === id);
+    if (!n) return goToList();
+    currentNoteId = id;
+    notesArea.value = n.text || "";
+    document.querySelectorAll("#notesDetailPage .color-swatch").forEach(b => {
+      b.classList.toggle("selected", b.dataset.color === n.color);
+    });
+    pinBtn.innerHTML = n.visible
+      ? '<img src="images/Pin.png" class="inline-icon" />Hide from home'
+      : '<img src="images/Pin.png" class="inline-icon" />Show on home';
+    listPage.classList.remove("active");
+    detailPage.classList.add("active");
+  }
+  notesBackEl?.addEventListener("click", goToList);
+
+  function renderList(){
+    const arr = loadNotes();
+    notesListEl.innerHTML = "";
+    if (!arr.length){
+      notesListEl.innerHTML = `<p style="opacity:.7;text-align:center;padding:20px;">No notes yet. Tap "+ New note" to start ✨</p>`;
+      return;
+    }
+    arr.forEach(n => {
+      const el = document.createElement("div");
+      el.className = "note-list-item";
+      el.style.setProperty("--note-bg", n.color || "#fff7a8");
+      el.style.background = n.color || "#fff7a8";
+      el.innerHTML = `
+        <div class="nli-preview">${escapeHtml(n.text || "")}</div>
+        <div class="nli-tags">${n.visible ? " on home" : "in notebook"}${n.pinned ? " · locked" : ""}</div>
+      `;
+      el.addEventListener("click", () => goToDetail(n.id));
+      notesListEl.appendChild(el);
+    });
+  }
+
+  newNoteBtn?.addEventListener("click", () => {
+    const arr = loadNotes();
+    const n = {
+      id:"n_"+Date.now()+"_"+Math.floor(Math.random()*999),
+      text:"", color:"#fff7a8", visible:false, pinned:false,
+      x: 80 + Math.random()*200, y: 160 + Math.random()*80
+    };
+    arr.push(n); saveNotesArr(arr); goToDetail(n.id);
+  });
+  saveBtn?.addEventListener("click", () => {
+    if (!currentNoteId) return;
+    patchNote(currentNoteId, { text: notesArea.value });
+    nStat.innerText = "Saved ✓";
+    setTimeout(() => nStat.innerText="", 1500);
+  });
+  notesArea?.addEventListener("input", () => {
+    if (!currentNoteId) return;
+    patchNote(currentNoteId, { text: notesArea.value });
+  });
+  pinBtn?.addEventListener("click", () => {
+    if (!currentNoteId) return;
+    const n = loadNotes().find(x => x.id === currentNoteId);
+    patchNote(currentNoteId, { visible: !n.visible });
+    goToDetail(currentNoteId);
+  });
+  delBtn?.addEventListener("click", () => {
+    if (!currentNoteId) return;
+    if (!confirm("Delete this note?")) return;
+    removeNote(currentNoteId); goToList();
+  });
+  document.querySelectorAll("#notesDetailPage .color-swatch").forEach(btn => {
+    btn.addEventListener("click", () => {
+      if (!currentNoteId) return;
+      patchNote(currentNoteId, { color: btn.dataset.color });
+      document.querySelectorAll("#notesDetailPage .color-swatch").forEach(b => b.classList.remove("selected"));
+      btn.classList.add("selected");
+    });
+  });
+
+  /* ----- HOME STICKIES (pointer-event drag, no leaks) ----- */
+  function renderHomeStickies(){
+    if (!stickyLayer) return;
+    stickyLayer.innerHTML = "";
+    loadNotes().filter(n => n.visible).forEach(buildHomeSticky);
+  }
+
+  function buildHomeSticky(n){
+  const el = document.createElement("div");
+  el.className = "sticky-note" + (n.pinned ? " pinned" : "");
+  el.dataset.id = n.id;
+  el.style.left = (n.xPct != null ? n.xPct * window.innerWidth  : (n.x ?? 80))  + "px";
+  el.style.top  = (n.yPct != null ? n.yPct * window.innerHeight : (n.y ?? 160)) + "px";
+  if (n.w) el.style.width  = n.w + "px";
+  if (n.h) el.style.height = n.h + "px";
+  el.style.setProperty("--sticky-bg", n.color || "#fff7a8");
+  el.style.background = n.color || "#fff7a8";
+  el.innerHTML = `
+    <div class="sticky-header">
+      <span><img src="images/Pin.png" alt="" class="inline-icon" /> Note</span>
+      <button class="sticky-close" title="Hide from home">×</button>
+    </div>
+    <div class="sticky-content">${escapeHtml(n.text || "")}</div>
+  `;
+
+  // The ONLY ways a sticky should disappear//
+  el.querySelector(".sticky-close").addEventListener("click", e => {
+    e.stopPropagation();
+    patchNote(n.id, { visible: false });
+  });
+
+  function togglePin(){
+    const nowPinned = !el.classList.contains("pinned");
+    el.classList.toggle("pinned", nowPinned);
+    patchNote(n.id, { pinned: nowPinned }, { skipRender: true });
+    el.classList.remove("pop"); void el.offsetWidth; el.classList.add("pop");
+  }
+  el.addEventListener("dblclick", e => {
+    if (e.target.closest(".sticky-close")) return;
+    togglePin();
+  });
+
+  let dragging=false, moved=false, ox=0, oy=0, sx=0, sy=0;
+  let lastTap = 0;
+  let resizing = false;
+  const THRESH = 4;
+
+  el.addEventListener("pointerdown", e => {
+    if (e.target.closest(".sticky-close")) return;
+    const r0 = el.getBoundingClientRect();
+    // bottom-right 22px square = native resize handle
+    if (e.clientX > r0.right - 22 && e.clientY > r0.bottom - 22){
+      resizing = true;
+      return; // let the browser handle native resize
+    }
+    if (e.pointerType === "touch"){
+      const now = Date.now();
+      if (now - lastTap < 350){ togglePin(); lastTap = 0; return; }
+      lastTap = now;
+    }
+    if (el.classList.contains("pinned")) return;
+    dragging = true; moved = false;
+    ox = e.clientX - r0.left; oy = e.clientY - r0.top;
+    sx = e.clientX; sy = e.clientY;
+    el.setPointerCapture(e.pointerId);
+  });
+
+  el.addEventListener("pointermove", e => {
+    if (!dragging) return;
+    if (!moved){
+      if (Math.abs(e.clientX - sx) < THRESH && Math.abs(e.clientY - sy) < THRESH) return;
+      moved = true;
+      el.classList.add("dragging");
+      el.classList.add("user-moved");
+      el.style.zIndex = 200;
+    }
+    let nx = e.clientX - ox, ny = e.clientY - oy;
+    const r = el.getBoundingClientRect();
+    nx = Math.max(0, Math.min(nx, window.innerWidth  - r.width));
+    ny = Math.max(0, Math.min(ny, window.innerHeight - r.height));
+    el.style.left = nx + "px"; el.style.top = ny + "px";
+  });
+
+function clampSticky(el, persist){
+  if (!el) return;
+  const margin = 6;
+  const maxW = Math.min(window.innerWidth  * 0.9, 420);
+  const maxH = window.innerHeight * 0.7;
+  const rB = el.getBoundingClientRect();
+  let w = Math.max(140, Math.min(rB.width,  maxW));
+  let h = Math.max(90,  Math.min(rB.height, maxH));
+  if (Math.abs(w-rB.width)>0.5)  el.style.width  = w+"px";
+  if (Math.abs(h-rB.height)>0.5) el.style.height = h+"px";
+  const r = el.getBoundingClientRect();
+  let x = parseFloat(el.style.left) || r.left;
+  let y = parseFloat(el.style.top)  || r.top;
+  x = Math.max(margin, Math.min(x, window.innerWidth  - r.width  - margin));
+  y = Math.max(margin, Math.min(y, window.innerHeight - r.height - margin));
+  el.style.left = x+"px"; el.style.top = y+"px";
+  if (persist){
+    const id = el.dataset.id;
+    if (id) patchNote(id, { x, y, w:Math.round(w), h:Math.round(h) }, { skipRender:true });
+  }
+}
+function clampAllStickies(persist){ document.querySelectorAll(".sticky-note:not(.pinned)").forEach(el => clampSticky(el, persist)); }
+let _stickyResizeT;
+
+function replaceStickies(){
+  const notes = loadNotes();
+  document.querySelectorAll(".sticky-note").forEach(el => {
+    const n = notes.find(x => String(x.id) === String(el.dataset.id));
+    if (n && n.xPct != null){
+      el.style.left = (n.xPct * window.innerWidth)  + "px";
+      el.style.top  = (n.yPct * window.innerHeight) + "px";
+    }
+    clampSticky(el, false);   // fit on screen WITHOUT overwriting the saved spot
+  });
+}
+
+window.addEventListener("resize", () => { clearTimeout(_stickyResizeT); _stickyResizeT = setTimeout(replaceStickies, 80); });
+window.addEventListener("orientationchange", () => setTimeout(replaceStickies, 150));
+
+
+  function endDrag(e){
+    if (resizing){
+      // Save the actually-resized dimensions; do NOT rebuild the layer
+      const r = el.getBoundingClientRect();
+            patchNote(n.id, {
+        x: r.left, y: r.top,
+        xPct: r.left / window.innerWidth,
+        yPct: r.top  / window.innerHeight
+      }, { skipRender: true });
+      resizing = false;
+      return;
+    }
+    if (!dragging) return;
+    dragging = false;
+    el.classList.remove("dragging");
+    try { el.releasePointerCapture(e.pointerId); } catch {}
+    if (moved){
+      const r = el.getBoundingClientRect();
+      patchNote(n.id, { x: r.left, y: r.top }, { skipRender: true });
+    }
+  }
+  el.addEventListener("pointerup", endDrag);
+  el.addEventListener("pointercancel", endDrag);
+
+requestAnimationFrame(() => clampSticky(el, false));
+
+  stickyLayer.appendChild(el);
+}
+
+// Re-render stickies once more after settings have rebuilt parts of the DOM.
+renderHomeStickies();
+
+  /* ---------- VIEWER ANTI-DOWNLOAD ---------- */
+  const viewerEl = document.getElementById("viewer");
+  if (viewerEl){
+    viewerEl.addEventListener("contextmenu", e => e.preventDefault());
+    viewerEl.addEventListener("dragstart",   e => e.preventDefault());
+    viewerEl.addEventListener("selectstart", e => e.preventDefault());
+    document.addEventListener("keydown", (e) => {
+      if (viewerEl.classList.contains("hidden")) return;
+      const k = e.key.toLowerCase();
+      if ((e.ctrlKey || e.metaKey) && (k === "s" || k === "p" || k === "u")) e.preventDefault();
+      if (k === "printscreen"){
+        e.preventDefault();
+        navigator.clipboard?.writeText("").catch(()=>{});
+      }
+    });
+  }
+
+  /* ---------- PET ---------- */
+  const pet  = document.getElementById("pet");
+  const mood = document.getElementById("petMood");
+  if (pet && mood){
+    const moods = ["Happy","Hungry","Sleepy","Excited","Curious","Sparkly"];
+    pet.addEventListener("click", () => {
+      const m = window.__petMoods;
+      const pool = (Array.isArray(m) && m.length) ? m : moods;
+      const next = pool[Math.floor(Math.random() * pool.length)];
+      mood.innerText = next;
+
+      // NEW: swap the pet image assigned to that mood
+      const map = window.__petMoodMap || {};
+      if (map[next]) pet.src = map[next];
+
+      pet.classList.remove("bounce"); void pet.offsetWidth; pet.classList.add("bounce");
+    });
+  }
+
+  /* PET — help tooltip */
+const petHelpBtn  = document.getElementById("petHelpBtn");
+const petHelpTip  = document.getElementById("petHelpTooltip");
+const isTouch = matchMedia("(hover: none)").matches;
+
+if (petHelpBtn && petHelpTip){
+  if (isTouch){
+    petHelpBtn.addEventListener("click", e => {
+      e.stopPropagation();
+      petHelpTip.classList.toggle("show");
+    });
+    document.addEventListener("click", e => {
+      if (!petHelpTip.classList.contains("show")) return;
+      if (e.target.closest(".pet-help-wrap")) return;
+      petHelpTip.classList.remove("show");
+    });
+  } else {
+    petHelpBtn.addEventListener("mouseenter", () => petHelpTip.classList.add("show"));
+    petHelpBtn.addEventListener("mouseleave", () => petHelpTip.classList.remove("show"));
+    petHelpBtn.addEventListener("focus",      () => petHelpTip.classList.add("show"));
+    petHelpBtn.addEventListener("blur",       () => petHelpTip.classList.remove("show"));
+  }
+}
+
+  /* ---------- FEEDBACK ---------- */
+  const FEEDBACK_TO = "paintingwithrl@gmail.com";
+  const form   = document.getElementById("feedbackForm");
+  const fbMsg = document.getElementById("fbMessage");
+if (fbMsg){
+  const autoGrow = () => {
+    fbMsg.style.height = "auto";
+    fbMsg.style.height = Math.min(fbMsg.scrollHeight, 600) + "px";
+  };
+  fbMsg.addEventListener("input", autoGrow);
+  // also reset after reset()
+  form?.addEventListener("reset", () => setTimeout(autoGrow, 0));
+}
+  const fbStat = document.getElementById("fbStatus");
+  if (form){
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name    = document.getElementById("fbName").value.trim();
+      const email   = document.getElementById("fbEmail").value.trim();
+      const message = document.getElementById("fbMessage").value.trim();
+      if (!name || !email || !message) return;
+      const subject = `Website Feedback from ${name}`;
+      const body =
+`Hi RL,
+
+You got a new message from your website 💌
+
+From: ${name}
+Email: ${email}
+
+----- Message -----
+${message}
+-------------------
+
+Sent: ${new Date().toLocaleString()}`;
+      const mailtoUrl = `mailto:${FEEDBACK_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoUrl;
+      if (fbStat){
+        fbStat.innerText = "Opening your email app… click Send to deliver ✨";
+        setTimeout(() => { form.reset(); fbStat.innerText = ""; }, 4000);
+      }
+    });
+  }
+
+  /* ---------- loadText ---------- */
+  window.loadText = function(path, targetId){
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    target.innerText = "Loading...";
+    fetch(path)
+      .then(r => { if (!r.ok) throw new Error("File not found"); return r.text(); })
+      .then(text => { target.innerText = text; })
+      .catch(() => { target.innerText = "Couldn't load this file yet — add it at '" + path + "' to show content here."; });
+  };
+
+  /* ---------- PER-SONG PLAY/PAUSE ---------- */
+  const songButtons = document.querySelectorAll(".play-btn[data-song]");
+  songButtons.forEach((btn) => {
+    const audio = document.getElementById(btn.dataset.song);
+    if (!audio) return;
+    const playSrc  = btn.dataset.play  || "images/Playicon.png";
+    const pauseSrc = btn.dataset.pause || "images/Pauseicon.png";
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if (audio.paused){
+        songButtons.forEach((other) => {
+          if (other === btn) return;
+          const a = document.getElementById(other.dataset.song);
+          if (a && !a.paused){ a.pause(); a.currentTime = 0; other.src = other.dataset.play || "images/Playicon.png"; }
+        });
+        audio.play().catch(()=>{});
+        btn.src = pauseSrc;
+      } else {
+        audio.pause(); btn.src = playSrc;
+      }
+    });
+    audio.addEventListener("ended", () => { btn.src = playSrc; audio.currentTime = 0; });
+    audio.addEventListener("play",  () => { btn.src = pauseSrc; });
+    audio.addEventListener("pause", () => { btn.src = playSrc;  });
+  });
+
+  /* ---------- "works best on computers" notice ---------- */
+  (function(){
+    if (window.innerWidth > 1024) return;
+    if (sessionStorage.getItem("desktopNoticeShown")) return;
+    if (document.querySelector(".popup.active")) return;
+    const notice = document.getElementById("desktopNotice");
+    const okBtn  = document.getElementById("desktopNoticeOk");
+    if (!notice || !okBtn) return;
+    notice.classList.remove("hidden");
+    okBtn.addEventListener("click", () => {
+      notice.classList.add("hidden");
+      sessionStorage.setItem("desktopNoticeShown", "1");
+    }, { once: true });
+  })();
+
+  /* ---------- SETTINGS (opens + locks exactly like Notes / Goals) ---------- */
+  window.openSettingsApp = () => openWindow("rwaSettingsOverlay");
+
+  const SET_PW_KEY   = "rwa-settings-pw";
+  const setLockScreen = document.getElementById("rwaLock");
+  const setPanel      = document.getElementById("rwaPanel");
+  const setPw         = document.getElementById("rwaPassword");
+  const setUnlock     = document.getElementById("rwaUnlockBtn");
+  const setSetPw      = document.getElementById("rwaSetPwBtn");
+  const setLockMsg    = document.getElementById("rwaLockMsg");
+  const setLockStatus = document.getElementById("rwaLockStatus");
+
+  function showSettingsLocked(){
+    const hasPw = !!localStorage.getItem(SET_PW_KEY);
+    setLockMsg.innerHTML = `<img src="images/Lock.png" alt="" class="inline-icon" /> ${hasPw ? "Settings are private." : "Set a password first."}`;
+    setUnlock.style.display = hasPw ? "inline-block" : "none";
+    setSetPw.style.display  = hasPw ? "none" : "inline-block";
+    setLockScreen.style.display = "flex";
+    setPanel.classList.add("rwa-locked");
+    setPw.value = "";
+  }
+  function showSettingsPanel(){
+    setLockScreen.style.display = "none";
+    setPanel.classList.remove("rwa-locked");
+  }
+  window.rwaLockSettings = showSettingsLocked;
+  if (setLockScreen && setPanel) showSettingsLocked();
+
+  setUnlock?.addEventListener("click", () => {
+    if (setPw.value === localStorage.getItem(SET_PW_KEY)){ setLockStatus.innerText = ""; showSettingsPanel(); }
+    else setLockStatus.innerText = "Wrong password ✕";
+  });
+  setSetPw?.addEventListener("click", () => {
+    if (!setPw.value){ setLockStatus.innerText = "Pick a password first"; return; }
+    localStorage.setItem(SET_PW_KEY, setPw.value);
+    setLockStatus.innerText = "Password set ✓";
+    showSettingsPanel();
+  });
+  setPw?.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") (localStorage.getItem(SET_PW_KEY) ? setUnlock : setSetPw).click();
+  });
+
+
+  /* =========================================================
+     SAVINGS GOAL APP + HOMEPAGE WIDGETS
+  ========================================================= */
+  window.openGoalApp = () => openWindow("goalApp");
+
+  const GOAL_PW_KEY   = "rwa-goal-pw";
+  const GOAL_LIST_KEY = "rwa-goals";
+
+  const goalLockScreen = document.getElementById("goalLockScreen");
+  const goalEditor     = document.getElementById("goalEditor");
+  const goalPw         = document.getElementById("goalPassword");
+  const goalUnlock     = document.getElementById("goalUnlockBtn");
+  const goalSetPw      = document.getElementById("goalSetPwBtn");
+  const goalLockBtn    = document.getElementById("goalLockBtn");
+  const goalNewBtn     = document.getElementById("goalNewBtn");
+  const goalListEl     = document.getElementById("goalList");
+  const goalLockMsg    = document.getElementById("goalLockMsg");
+  const goalLockStatus = document.getElementById("goalLockStatus");
+  const goalLayer      = document.getElementById("goalWidgetLayer");
+
+  function loadGoals(){ try{ return JSON.parse(localStorage.getItem(GOAL_LIST_KEY)||"[]"); }catch{ return []; } }
+  function saveGoals(list){ localStorage.setItem(GOAL_LIST_KEY, JSON.stringify(list)); renderWidgets(); }
+  function patchGoal(id, patch){
+    saveGoals(loadGoals().map(g => g.id===id ? {...g, ...patch} : g));
+  }
+
+  function showGoalLocked(){
+    const hasPw = !!localStorage.getItem(GOAL_PW_KEY);
+    goalLockMsg.innerHTML = `<img src="images/Lock.png" alt="" class="inline-icon" /> ${hasPw?"Savings goals are private.":"Set a password first."}`;
+    goalUnlock.style.display = hasPw ? "inline-block" : "none";
+    goalSetPw.style.display  = hasPw ? "none" : "inline-block";
+    goalLockScreen.style.display = "flex"; goalEditor.style.display = "none";
+    if (goalPw){ goalPw.value=""; }
+  }
+  function showGoalEditor(){
+    goalLockScreen.style.display = "none"; goalEditor.style.display = "flex";
+    renderGoalCards();
+  }
+  if (goalLockScreen) showGoalLocked();
+
+  goalUnlock?.addEventListener("click", () => {
+    if (goalPw.value === localStorage.getItem(GOAL_PW_KEY)){ goalLockStatus.innerText=""; showGoalEditor(); }
+    else goalLockStatus.innerText = "Wrong password ✕";
+  });
+  goalSetPw?.addEventListener("click", () => {
+    if (!goalPw.value){ goalLockStatus.innerText="Pick a password first"; return; }
+    localStorage.setItem(GOAL_PW_KEY, goalPw.value);
+    goalLockStatus.innerText="Password set ✓";
+    setTimeout(showGoalEditor, 400);
+  });
+  goalPw?.addEventListener("keydown", e => {
+    if (e.key==="Enter") (localStorage.getItem(GOAL_PW_KEY)?goalUnlock:goalSetPw).click();
+  });
+  goalLockBtn?.addEventListener("click", showGoalLocked);
+
+  goalNewBtn?.addEventListener("click", () => {
+    const list = loadGoals();
+    list.push({
+      id: "g_"+Date.now(),
+      title: "New Goal", description: "", link: "",
+      saved: 0, goal: 100,
+      pinned: false, visible: true,
+      x: 80 + Math.random()*200, y: 200 + Math.random()*100
+    });
+    saveGoals(list); renderGoalCards();
+  });
+
+  function renderGoalCards(){
+    const list = loadGoals();
+    goalListEl.innerHTML = "";
+    if (!list.length){
+      goalListEl.innerHTML = `<p style="opacity:.7;text-align:center;padding:20px;">No goals yet. Click "+ New goal" to add one ✨</p>`;
+      return;
+    }
+    list.forEach(g => {
+      const card = document.createElement("div");
+      card.className = "goal-card";
+      card.innerHTML = `
+        <label>Title<input type="text" data-f="title" value="${(g.title||'').replace(/"/g,'&quot;')}" /></label>
+        <label>Goal $<input type="number" data-f="goal" value="${g.goal}" min="1" /></label>
+        <label>Saved $<input type="number" data-f="saved" value="${g.saved}" min="0" /></label>
+        <label>Link (optional)<input type="text" data-f="link" placeholder="https://..." value="${(g.link||'').replace(/"/g,'&quot;')}" /></label>
+        <label class="full">Description<textarea data-f="description">${g.description||''}</textarea></label>
+        <div class="goal-card-actions">
+          <button class="home" data-act="home">${g.visible?"On homepage ✓":"Add to homepage"}</button>
+          <button class="reset" data-act="reset">Reset progress</button>
+          <button class="del" data-act="del">Delete</button>
+        </div>
+      `;
+      card.querySelectorAll("[data-f]").forEach(inp => {
+        inp.addEventListener("input", () => {
+          const f = inp.dataset.f;
+          let v = inp.value;
+          if (f==="saved" || f==="goal") v = Math.max(f==="goal"?1:0, Number(v)||0);
+          patchGoal(g.id, { [f]: v });
+        });
+      });
+      card.querySelectorAll("[data-act]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const a = btn.dataset.act;
+          if (a==="del"){ saveGoals(loadGoals().filter(x=>x.id!==g.id)); renderGoalCards(); }
+          else if (a==="reset"){ patchGoal(g.id,{saved:0}); renderGoalCards(); }
+          else if (a==="home"){ patchGoal(g.id,{visible:true}); renderGoalCards(); }
+        });
+      });
+      goalListEl.appendChild(card);
+    });
+  }
+
+  /* ---------- Homepage goal widgets ---------- */
+  function renderWidgets(){
+    goalLayer.innerHTML = "";
+    loadGoals().filter(g => g.visible).forEach(buildWidget);
+  }
+
+  function buildWidget(g){
+    const pct = Math.min(100, Math.round((Number(g.saved)/Number(g.goal||1))*100));
+    const w = document.createElement("div");
+    w.className = "goal-widget" + (g.pinned ? " pinned" : "");
+    w.dataset.id = g.id;
+    w.style.left = (g.x ?? 100) + "px";
+    w.style.top  = (g.y ?? 200) + "px";
+    w.innerHTML = `
+      <div class="gw-star" title="Open"></div>
+      <div class="gw-main">
+        <div class="gw-title">${escapeHtml(g.title||'Goal')}</div>
+        <div class="gw-bar"><div class="gw-fill" style="width:${pct}%"></div></div>
+        <div class="gw-num">$${g.saved}/$${g.goal}</div>
+      </div>
+      <button class="gw-x" title="Remove from homepage">×</button>
+      <div class="gw-expand">
+        <div class="gw-desc">${escapeHtml(g.description||'No description yet.')}</div>
+        ${g.link ? `<a class="gw-link" href="${escapeAttr(g.link)}" target="_blank" rel="noopener">${escapeHtml(g.link)}</a>` : ''}
+      </div>
+    `;
+
+    w.querySelector(".gw-x").addEventListener("click", e => {
+      e.stopPropagation();
+      patchGoal(g.id, { visible:false });
+      playClose();
+    });
+
+    function togglePin(){
+      const nowPinned = !w.classList.contains("pinned");
+      w.classList.toggle("pinned", nowPinned);
+      patchGoal(g.id, { pinned: nowPinned });
+      w.style.transition = "transform .2s";
+      w.style.transform = "scale(1.05)";
+      setTimeout(() => w.style.transform = "", 200);
+    }
+    function toggleExpand(){ w.classList.toggle("expanded"); }
+
+    let dragging=false, moved=false, ox=0, oy=0, sx=0, sy=0;
+    let lastTap = 0, singleTimer = null;
+    const THRESH = 4;
+
+    w.addEventListener("pointerdown", e => {
+      if (e.target.closest(".gw-x") || e.target.closest(".gw-link")) return;
+
+      // touch double-tap = pin/unpin
+      if (e.pointerType === "touch"){
+        const now = Date.now();
+        if (now - lastTap < 350){
+          clearTimeout(singleTimer); singleTimer = null;
+          togglePin(); lastTap = 0; return;
+        }
+        lastTap = now;
+      }
+
+      if (!w.classList.contains("pinned")){
+        dragging = true; moved = false;
+        const r = w.getBoundingClientRect();
+        ox = e.clientX - r.left; oy = e.clientY - r.top;
+        sx = e.clientX; sy = e.clientY;
+        w.setPointerCapture(e.pointerId);
+      } else {
+        // pinned: pointerdown still allowed to count as tap → expand
+        dragging = true; moved = false;
+        sx = e.clientX; sy = e.clientY;
+      }
+    });
+
+    w.addEventListener("pointermove", e => {
+      if (!dragging || w.classList.contains("pinned")) return;
+      if (!moved){
+        if (Math.abs(e.clientX - sx) < THRESH && Math.abs(e.clientY - sy) < THRESH) return;
+        moved = true;
+        w.classList.add("dragging");
+      }
+      let nx = e.clientX - ox, ny = e.clientY - oy;
+      const r = w.getBoundingClientRect();
+      nx = Math.max(0, Math.min(nx, window.innerWidth  - r.width));
+      ny = Math.max(0, Math.min(ny, window.innerHeight - r.height));
+      w.style.left = nx + "px"; w.style.top = ny + "px";
+    });
+
+    function endDrag(e){
+      const wasDragging = dragging, wasMoved = moved;
+      if (dragging){
+        dragging = false;
+        w.classList.remove("dragging");
+        try { w.releasePointerCapture(e.pointerId); } catch {}
+        if (moved){
+          const r = w.getBoundingClientRect();
+          patchGoal(g.id, { x: r.left, y: r.top });
+        }
+      }
+      // pointer-up without movement = single tap → expand (after small delay so dblclick wins on desktop)
+      if (wasDragging && !wasMoved){
+        clearTimeout(singleTimer);
+        singleTimer = setTimeout(toggleExpand, 230);
+      }
+    }
+    w.addEventListener("pointerup", endDrag);
+    w.addEventListener("pointercancel", e => {
+      dragging = false;
+      w.classList.remove("dragging");
+      try { w.releasePointerCapture(e.pointerId); } catch {}
+    });
+
+    // mouse double-click = pin/unpin (also cancels the pending single-click expand)
+    w.addEventListener("dblclick", e => {
+      if (e.target.closest(".gw-x") || e.target.closest(".gw-link")) return;
+      clearTimeout(singleTimer); singleTimer = null;
+      togglePin();
+    });
+
+    goalLayer.appendChild(w);
+  }
+
+  // initial render
+  renderWidgets();
+
+/* =========================================================
+   RWA CONTROL PANEL  —  state store + live website binding + settings UI
+   Replaces the previous "RWA STATE" and "RWA SETTINGS" modules.
+   Self-contained: reads/writes the real website content and persists it.
+   ========================================================= */
+(function (global) {
+  'use strict';
+
+  const STORAGE_KEY = 'rwa.state.v1';
+
+  /* ---------- helpers ---------- */
+  const deepClone = (x) => JSON.parse(JSON.stringify(x));
+  const uid = (p) => (p || 'i') + Date.now().toString(36) + Math.floor(Math.random() * 9999).toString(36);
+  function deepMerge(base, override) {
+    if (Array.isArray(override)) return deepClone(override);
+    if (override && typeof override === 'object') {
+      const out = (base && typeof base === 'object' && !Array.isArray(base)) ? { ...base } : {};
+      for (const k of Object.keys(override)) out[k] = deepMerge(out[k], override[k]);
+      return out;
+    }
+    return override === undefined ? base : override;
+  }
+  const getPath = (obj, path) => path.split('.').reduce((o, k) => (o == null ? undefined : o[k]), obj);
+  function setPath(obj, path, value) {
+    const keys = path.split('.'); const last = keys.pop();
+    const t = keys.reduce((o, k) => { if (o[k] == null || typeof o[k] !== 'object') o[k] = {}; return o[k]; }, obj);
+    t[last] = value;
+  }
+
+  /* ---------- DEFAULT STATE (seeded from the real website) ---------- */
+  const DEFAULTS = {
+    theme: {
+      lightBg: '#e6c3ff', darkBg: '#1d0140',
+      lightCover: '#e6c3ff', darkCover: '#1d0140',
+      lightText: '#28004b', darkText: '#ddbef8',
+      lightFrame: '#7d57c2', darkFrame: '#371561',
+      lightDivider: '#7d57c2', darkDivider: '#8a5cff',
+      // independent gradients for light + dark, bg + frame
+      lightBgGrad:   { on:false, color2:'#b58dff', angle:135 },
+      darkBgGrad:    { on:false, color2:'#3a1470', angle:135 },
+      lightFrameGrad:{ on:false, color2:'#a67cff', angle:135 },
+      darkFrameGrad: { on:false, color2:'#5a2da6', angle:135 },
+    },
+    positions: {
+      scene:    { x: null, y: null },
+      linkStar: { x: null, y: null },
+      projects: { x: null, y: null },
+      face:     { x: null, y: null },
+    },
+    assets: {
+      sceneLight:'images/Sunrise.png', sceneDark:'images/Moonlight.png',
+      cloudsLight:'images/Light Purple Cloud.png', cloudsDark:'images/Dark Purple Cloud.png',
+      centerFace:'images/Circle Face.png', eyes:'images/Eyes.png',
+      linkStar:'images/Link Star.png', moreProjects:'images/More Projects.png',
+      musicStars:'images/Music Stars.png', sunMoon:'images/SunMoon.png',
+      mute:'images/No Audio.png', unmute:'images/Audio.png',
+      signature:'images/My Signature (RL).png',
+    },
+    artist: {
+      meetImage:'images/Meet the artist (RL).png',
+      name:'RL', pronouns:'She/Her',
+      aboutList:[
+        'Digital & traditional artist',
+        'Loves cozy games',
+        'Sketchbook everywhere',
+        'Dreaming big always',
+        'Coffee & late night drawing',
+        'Fantasy & soft aesthetics',
+        'Character design lover',
+        'Storytelling through art',
+      ],
+      meetText:'Meet the artist',
+      moreText:'Here you can write a longer bio, your story, goals, dreams, inspirations, favorite tools, or anything you want later. This section expands smoothly.',
+      endingText:'You can write anything about your tools, daily routine, favorite materials, or art process here later \u2728',
+      bag: [
+        { id:'b1', label:'Phone', img:'images/Myphone.png' },
+        { id:'b2', label:'Traveling sketchbook', img:'images/Secondsketchbook.png' },
+        { id:'b3', label:'Headphones', img:'images/Headphones.png' },
+        { id:'b4', label:'Instax Mini Camera', img:'images/Instaxmini.png' },
+        { id:'b5', label:'Mirror', img:'images/Mirror.png' },
+        { id:'b6', label:'Plushies', img:'images/peachandv.png' },
+        { id:'b7', label:'R.E.M Beauty Lip Oil Pickin Petals', img:'images/R.E.MLip.png' },
+        { id:'b8', label:'Portable Charger', img:'images/Portablecharger.png' },
+        { id:'b9', label:'Charging Cord', img:'images/Chargingcord.png' },
+        { id:'b10', label:'Purple Sketchbook', img:'images/Sketchbook.png' },
+        { id:'b11', label:'Glinda Journal', img:'images/Glindajournal.png' },
+        { id:'b12', label:'Purple Plushie Monkey', img:'images/purplemonkey.png' },
+        { id:'b13', label:'Metal Mechanical Pencil Set in Leather Case', img:'images/Pencil.png' },
+      ],
+      enjoy: [
+        { id:'e1', label:'Playstation 4', img:'images/PS4.png' },
+        { id:'e2', label:'Two CDs Games', img:'images/CDgame.png' },
+        { id:'e3', label:'Mini Karaoke Machine', img:'images/karaoke.png' },
+        { id:'e4', label:'Hermione Wand', img:'images/HermioneWand.png' },
+        { id:'e5', label:'Snowy Owl Plushie', img:'images/Snowy owl.png' },
+        { id:'e6', label:'Tracing Light Box and Digital Tablet', img:'images/Lightboxandtablet.png' },
+        { id:'e7', label:'Digital Pen', img:'images/Digitalpen.png' },
+        { id:'e8', label:'The Pensiveness', img:'images/popskullpanda.png' },
+        { id:'e9', label:'Dryad', img:'images/Sleepdreamlandelves.png' },
+        { id:'e10', label:'Ohuhu Markers, Color Pencils, and Himi Gouache', img:'images/Colorpencils.png' },
+        { id:'e11', label:'Dolls I have', img:'images/dolls.png' },
+        { id:'e12', label:'My Ariana Grande Perfume Collections', img:"images/Ari'sperfume.png" },
+        { id:'e13', label:'books I like', img:'images/Books.png' },
+      ],
+    },
+    sceneSections: [
+      { id:'painting', title:'Painting', desc:'Manage painting gallery', items:[
+        { id:'p1', type:'image', src:'My artwork/Colorfuleyeheartpainting.jpeg', title:'' },
+        { id:'p2', type:'image', src:'My artwork/paintinginprocess.jpg', title:'' },
+        { id:'p3', type:'image', src:'My artwork/Theshiningstar_edited.jpeg', title:'' },
+        { id:'p4', type:'image', src:'My artwork/paintingofaloveone.jpeg', title:'' },
+      ]},
+      { id:'digital', title:'Digital Art', desc:'Manage digital art', items:[
+        { id:'d1', type:'image', src:'My artwork/stickerofmypandadesign.PNG', title:'' },
+        { id:'d2', type:'image', src:'My artwork/backgroundscene.png', title:'' },
+        { id:'d3', type:'image', src:'My artwork/Banner image.png', title:'' },
+      ]},
+      { id:'video', title:'Video', desc:'Manage videos', items:[
+        { id:'v1', type:'video', src:'My artwork/Planets girl.mp4', title:'' },
+        { id:'v2', type:'video', src:'My artwork/Animation unisad.mp4', title:'' },
+      ]},
+    ],
+    links: {
+      bubbleText:'New links & content coming soon \u2728',
+      items: [
+        { id:'l1', title:'YouTube',    url:'https://youtube.com/channel/UCtPtkwMcgg2aOupMYsTOkJQ', icon:'images/Youtube.png' },
+        { id:'l2', title:'Instagram',  url:'https://www.instagram.com/radiantwoundartrl', icon:'images/Instagram.png' },
+        { id:'l3', title:'TikTok',     url:'https://www.tiktok.com/@radiantwoundartrl', icon:'images/TikTok.png' },
+        { id:'l4', title:'Patreon',    url:'https://patreon.com/purpleartworl', icon:'images/Patreon.png' },
+        { id:'l5', title:'Shop',       url:'https://www.patreon.com/c/purpleartworl/shop', icon:'images/Shop.png' },
+        { id:'l6', title:'Artfol',     url:'https://artfol.app/@radiantwoundartrl', icon:'images/Artfol.png' },
+        { id:'l7', title:'Commissions',url:'mailto:paintingwithrl@gmail.com?subject=Commission%20Request', icon:'images/Document.png' },
+        { id:'l8', title:'Email',      url:'mailto:paintingwithrl@gmail.com', icon:'images/Contacts.png' },
+      ],
+    },
+    projects: {
+      folders: [
+        { id:'ads',   title:'Advertising Design', items:[
+          { id:'a0', type:'text', text:'I Have 3 Years Experience In Advertising Design.' },
+          { id:'a1', type:'image', src:'My artwork/Front cover of the forest magazine.png' },
+          { id:'a2', type:'image', src:'My artwork/back cover of the forest magazine.png' },
+          { id:'a3', type:'image', src:'My artwork/D of advertisingalien.jpeg' },
+          { id:'a4', type:'image', src:'My artwork/Posterdesign.jpg' },
+          { id:'a5', type:'image', src:'My artwork/Bookcoverdesign.jpg' },
+        ]},
+        { id:'code',  title:'Coding Projects', items:[
+          { id:'c0', type:'text', text:'Working On Projects To Put Here.' },
+          { id:'c1', type:'file', src:'text-files/coding-projects.txt', title:'Read Coding Projects' },
+        ]},
+        { id:'clay',  title:'Clay', items:[ { id:'cl0', type:'text', text:'Images Will Be Here On December.' } ]},
+        { id:'comic', title:'Comic Projects', items:[ { id:'cm0', type:'text', text:'Nothing Yet To Share Here.' } ]},
+        { id:'oc',    title:'OC Stories', items:[
+          { id:'oc0', type:'text', text:"At This Moment I'm Working On Their Stories." },
+          { id:'oc1', type:'file', src:'text-files/oc-story-1.txt', title:'Read Story' },
+        ]},
+        { id:'music', title:'Own Music', items:[
+          { id:'mu0', type:'text', text:'At The Moment There Is Nothing for Me To Play.' },
+          { id:'mu1', type:'audio', src:'Audio Sound/Rusi - title of your mind.m4a', title:'My First Song' },
+        ]},
+      ],
+    },
+    audio: {
+      queue: [
+        { id:'t1', title:'Melodic Electro Pop Beat', src:'Audio Sound/melodic-electro-pop-beat-pop-music-charming-325237.mp3' },
+      ],
+      systemClick:'Audio Sound/pop-cartoon-328167.mp3',
+      systemClose:'Audio Sound/bubble-pop-389501.mp3',
+      volume:0.7,
+      spotifyUrl:'https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M',
+
+      spotifyLightBody:'#ffffff', spotifyLightHead:'#8f4bd4',
+      spotifyDarkBody:'#12002e',  spotifyDarkHead:'#3a1470',
+    },
+    apps: {
+      painting:{ icon:'images/Paintingicon.png', canvasW:600, canvasH:400,
+                 tools:['Color picker','Brush size','Clear','Save PNG'] },
+      feedback:{ icon:'images/Feedback.png', recipient:'paintingwithrl@gmail.com' },
+      notes:{ icon:'images/Notepad.png', colors:['#fff7a8','#ffd6e7','#d6ffd9','#d6e4ff','#f9d6ff'], bgImage:'' },
+      goals:{ icon:'images/Goal.png', starIcon:'images/Goalbarstar.png',
+              barFrom:'#ffe27a', barTo:'#ffb84d',
+              lightFrom:'#b58dff', lightTo:'#8f4bd4', darkFrom:'#5a2da6', darkTo:'#2a0d5e' },
+      pet:{ icon:'images/Pet.png', roomBg:'',
+            helpText:'I will update this app later on in the future, and it will have actual house pets as well, but for now I will have this.',
+            hintText:'Click the pet to change its mood', moods:[
+        { id:'hungry',  label:'Hungry',  img:'images/Pet.png' },
+        { id:'excited', label:'Excited', img:'images/Pet.png' },
+        { id:'happy',   label:'Happy',   img:'images/Pet.png' },
+        { id:'sparkly', label:'Sparkly', img:'images/Pet.png' },
+        { id:'curious', label:'Curious', img:'images/Pet.png' },
+        { id:'sleepy',  label:'Sleepy',  img:'images/Pet.png' },
+      ]},
+    },
+  };
+
+  /* ---------- load / persist ---------- */
+  let state;
+  try {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    state = raw ? deepMerge(deepClone(DEFAULTS), JSON.parse(raw)) : deepClone(DEFAULTS);
+  } catch (e) { console.warn('[RWA] restore failed', e); state = deepClone(DEFAULTS); }
+
+  let saveTimer = null;
+  function persist() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+      catch (e) { console.warn('[RWA] save failed', e); }
+    }, 100);
+  }
+
+  /* ---------- pub/sub ---------- */
+  const subs = new Set();
+  function subscribe(pathOrFn, maybeFn) {
+    const fn = maybeFn || pathOrFn, path = maybeFn ? pathOrFn : '*';
+    const entry = { path, fn }; subs.add(entry);
+    return () => subs.delete(entry);
+  }
+  function notify(changed) {
+    for (const { path, fn } of subs) {
+      if (path === '*' || changed === path || changed.startsWith(path + '.') || path.startsWith(changed + '.')) {
+        try { fn(path === '*' ? state : getPath(state, path), state); } catch (e) { console.error('[RWA] sub error', e); }
+      }
+    }
+  }
+
+  /* ---------- public API ---------- */
+  const API = {
+    STORAGE_KEY,
+    defaults: () => deepClone(DEFAULTS),
+    getAll: () => deepClone(state),
+    get: (p) => deepClone(p ? getPath(state, p) : state),
+    set(p, v) { setPath(state, p, deepClone(v)); persist(); notify(p); },
+    update(p, fn) { setPath(state, p, fn(deepClone(getPath(state, p)))); persist(); notify(p); },
+    reset(p) {
+      if (!p) state = deepClone(DEFAULTS);
+      else setPath(state, p, deepClone(getPath(DEFAULTS, p)));
+      persist(); notify(p || '*');
+    },
+    subscribe,
+    exportJSON: () => JSON.stringify(state, null, 2),
+    exportFile(name = 'rwa-settings.json') {
+      const blob = new Blob([API.exportJSON()], { type: 'application/json' });
+      const url = URL.createObjectURL(blob), a = document.createElement('a');
+      a.href = url; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(url), 500);
+    },
+    importJSON(str) { state = deepMerge(deepClone(DEFAULTS), JSON.parse(str)); persist(); notify('*'); },
+    importFile(file) {
+      return new Promise((res, rej) => {
+        const r = new FileReader();
+        r.onload = () => { try { API.importJSON(r.result); res(true); } catch (e) { rej(e); } };
+        r.onerror = () => rej(r.error); r.readAsText(file);
+      });
+    },
+    listAdd(p, item) { API.update(p, (a) => { (a = a || []).push({ id: uid(), ...item }); return a; }); },
+    listRemove(p, id) { API.update(p, (a) => (a || []).filter((x) => x.id !== id)); },
+    listMove(p, id, dir) {
+      API.update(p, (a) => { a = a || []; const i = a.findIndex((x) => x.id === id), j = i + dir;
+        if (i < 0 || j < 0 || j >= a.length) return a; [a[i], a[j]] = [a[j], a[i]]; return a; });
+    },
+    listReorder(p, ids) { API.update(p, (a) => { a = a || []; return ids.map((id) => a.find((x) => x.id === id)).filter(Boolean); }); },
+    listUpdate(p, id, patch) { API.update(p, (a) => (a || []).map((x) => (x.id === id ? { ...x, ...patch } : x))); },
+  };
+  global.RWA = API;
+
+  /* =========================================================
+     LIVE WEBSITE BINDING — settings write straight to the page
+     ========================================================= */
+  const isDark = () => document.body.classList.contains('dark');
+  const q = (s, r = document) => r.querySelector(s);
+  const qa = (s, r = document) => Array.from(r.querySelectorAll(s));
+
+  function gradOrColor(color, g) { return g && g.on ? `linear-gradient(${g.angle}deg, ${color}, ${g.color2})` : color; }
+
+  function applyTheme() {
+    const t = state.theme, dark = isDark(), root = document.documentElement.style;
+    const bg = dark ? t.darkBg : t.lightBg, fr = dark ? t.darkFrame : t.lightFrame;
+    const bgG = dark ? t.darkBgGrad : t.lightBgGrad, frG = dark ? t.darkFrameGrad : t.lightFrameGrad;
+    document.body.style.background = (bgG && bgG.on) ? gradOrColor(bg, bgG) : '';
+    root.setProperty('--background', bg);
+    root.setProperty('--frame-cover-color', dark ? t.darkCover : t.lightCover);
+    root.setProperty('--divider', dark ? (t.darkDivider || t.darkFrame) : (t.lightDivider || t.lightFrame));
+    if (frG && frG.on) qa('.frame').forEach((el) => (el.style.background = gradOrColor(fr, frG)));
+    else { qa('.frame').forEach((el) => (el.style.background = '')); root.setProperty('--frame-color', fr); }
+  }
+
+  function applySpotify(){
+    const a = API.get('audio') || {}, r = document.documentElement.style;
+    r.setProperty('--sp-body',      a.spotifyLightBody || '#ffffff');
+    r.setProperty('--sp-body-dark', a.spotifyDarkBody  || '#12002e');
+    r.setProperty('--sp-head',      `linear-gradient(135deg, ${a.spotifyLightHead||'#8f4bd4'}, ${a.spotifyLightHead||'#8f4bd4'}cc)`);
+    r.setProperty('--sp-head-dark', `linear-gradient(135deg, ${a.spotifyDarkHead||'#3a1470'}, ${a.spotifyDarkHead||'#3a1470'}cc)`);
+    r.setProperty('--sp-text',      '#2a0b52');
+    r.setProperty('--sp-text-dark', '#ffffff');
+  }
+
+  function applyPositions() {
+    const p = state.positions;
+    const set = (sel, c) => { const el = q(sel); if (!el || !c) return;
+      if (c.x != null) { el.style.left = c.x + 'px'; el.style.right = 'auto'; }
+      if (c.y != null) { el.style.top = c.y + 'px'; el.style.bottom = 'auto'; } };
+    set('.hitbox-scene', p.scene); set('.hitbox-links', p.linkStar);
+    set('.hitbox-projects', p.projects); set('.hitbox-face', p.face);
+  }
+
+  function applyAssets() {
+    const a = state.assets, s = (sel, src) => { const el = q(sel); if (el && src) el.src = src; };
+    s('#scene', a.sceneLight); s('#scene-dark', a.sceneDark);
+    s('#light-clouds', a.cloudsLight); s('#dark-clouds', a.cloudsDark);
+    s('#center-face', a.centerFace); s('#eyes', a.eyes);
+    s('#linkStar', a.linkStar); s('#moreProjects', a.moreProjects);
+    s('#music-stars', a.musicStars); s('#mode-toggle', a.sunMoon);
+    const st = q('#soundToggle'); if (st) st.src = (st.classList.contains('muted') ? a.mute : a.unmute);
+  }
+
+  function esc(v) { return String(v ?? '').replace(/[&<>"]/g, (c) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c])); }
+
+  /* ---- fullscreen viewer (re-usable after dynamic rebuilds) ---- */
+  function openViewer(src, type) {
+    const v = q('#viewer'), vi = q('#viewerImg'), vv = q('#viewerVideo');
+    if (!v) return; v.classList.remove('hidden'); v.style.pointerEvents = 'auto'; document.body.style.overflow = 'hidden';
+    if (type === 'video') { vv.src = src; vv.style.display = 'block'; vi.style.display = 'none'; vv.play().catch(()=>{}); }
+    else { vi.src = src; vi.style.display = 'block'; vv.style.display = 'none'; vv.pause && vv.pause(); }
+  }
+
+  function applyArtist() {
+    const a = state.artist, pop = q('#facePopup'); if (!pop) return;
+    const meet = q('.artist-figure img', pop); if (meet && a.meetImage) meet.src = a.meetImage;
+    const label = q('.meet-label', pop); if (label && a.meetText) label.textContent = a.meetText;
+    const nm = q('.artist-name', pop); if (nm && a.name) nm.textContent = a.name;
+    const pr = q('.artist-pronouns', pop); if (pr && a.pronouns) pr.textContent = a.pronouns;
+     const more = q('#artistMoreText p', pop); if (more) more.textContent = a.moreText || '';
+    const last = q('.bag-extra-text p', pop); if (last) last.textContent = a.endingText || '';
+    const cols = q('.about-columns', pop);
+    if (cols) {
+      const list = a.aboutList || [];
+      const half = Math.ceil(list.length / 2);
+      const ul = (arr) => '<ul>' + arr.map((x) => `<li>${esc(x)}</li>`).join('') + '</ul>';
+      cols.innerHTML = ul(list.slice(0, half)) + ul(list.slice(half));
+    }
+    const bagGrid = q('.bag-grid', pop);
+    if (bagGrid) bagGrid.innerHTML = (a.bag || []).map((it) =>
+      `<div class="bag-item"><img src="${esc(it.img)}" alt="${esc(it.label)}" /><span>${esc(it.label)}</span></div>`).join('');
+    const enjoyGrid = q('.items-grid', pop);
+    if (enjoyGrid) enjoyGrid.innerHTML = (a.enjoy || []).map((it) =>
+      `<div class="more-item"><img src="${esc(it.img)}" alt="${esc(it.label)}" /><span>${esc(it.label)}</span></div>`).join('');
+  }
+
+  function applyLinks() {
+    const L = state.links, pop = q('#linksPopup .popup-content'); if (!pop) return;
+    const bubble = q('.links-bubble', pop); if (bubble) bubble.textContent = L.bubbleText || '';
+    qa('a', pop).forEach((el) => el.remove());
+    (L.items || []).forEach((it) => {
+      const a = document.createElement('a');
+      a.href = it.url || '#'; a.target = '_blank'; a.rel = 'noopener';
+      a.innerHTML = `<img src="${esc(it.icon)}" alt="${esc(it.title)}" /><span>${esc(it.title)}</span>`;
+      pop.appendChild(a);
+    });
+  }
+
+  function applyScene() {
+    const pop = q('#scenePopup .popup-content'); if (!pop) return;
+    pop.innerHTML = '';
+    (state.sceneSections || []).forEach((sec, i) => {
+      if (i) { const d = document.createElement('div'); d.className = 'section-divider'; pop.appendChild(d); }
+      const wrap = document.createElement('div'); wrap.className = 'gallery-section';
+      wrap.innerHTML = `<h2 class="gallery-title">${esc(sec.title)}</h2><div class="gallery-grid"></div>`;
+      const grid = wrap.querySelector('.gallery-grid');
+      (sec.items || []).forEach((it) => {
+        let node;
+        if (it.type === 'video') { node = document.createElement('video'); node.className = 'gallery-item'; node.setAttribute('controls',''); node.innerHTML = `<source src="${esc(it.src)}" type="video/mp4" />`;
+          node.addEventListener('click', () => { const s = node.currentSrc || it.src; node.pause(); openViewer(s, 'video'); }); }
+        else { node = document.createElement('img'); node.className = 'gallery-item'; node.src = it.src; node.alt = it.title || '';
+          node.addEventListener('click', () => openViewer(node.src, 'img')); }
+        grid.appendChild(node);
+      });
+      pop.appendChild(wrap);
+    });
+  }
+
+  function applyProjects() {
+    const home = q('#projectsHome .folder-grid'); if (!home) return;
+    // remove previous dynamic folders + pages
+    qa('#projectsHome .folder:not(.app-icon)').forEach((f) => f.remove());
+    qa('#projectsPopup .projects-page[data-dyn="1"]').forEach((p) => p.remove());
+    const apps = q('.folder.app-icon', home);
+    (state.projects.folders || []).forEach((fld) => {
+      const folder = document.createElement('div');
+      folder.className = 'folder'; folder.dataset.pid = fld.id;
+      folder.innerHTML = `<div class="folder-icon">
+        <img class="folder-closed" src="images/Closefolder.png" alt="" />
+        <img class="folder-open" src="images/Openfolder.png" alt="" /></div><span>${esc(fld.title)}</span>`;
+      folder.addEventListener('click', () => openProjectPage('pg_' + fld.id, folder));
+      home.insertBefore(folder, apps || null);
+
+      const page = document.createElement('div');
+      page.className = 'projects-page'; page.id = 'pg_' + fld.id; page.dataset.dyn = '1';
+      page.innerHTML = `<h2>${esc(fld.title)}</h2>`;
+      (fld.items || []).forEach((it) => {
+        if (it.type === 'text') { const p = document.createElement('p'); p.textContent = it.text || ''; page.appendChild(p); }
+        else if (it.type === 'image') { const im = document.createElement('img'); im.className = 'gallery-item'; im.src = it.src; im.alt = '';
+          im.addEventListener('click', () => openViewer(im.src, 'img')); page.appendChild(im); }
+        else if (it.type === 'video') { const v = document.createElement('video'); v.className = 'gallery-item'; v.setAttribute('controls',''); v.innerHTML = `<source src="${esc(it.src)}" type="video/mp4" />`;
+          v.addEventListener('click', () => { v.pause(); openViewer(v.currentSrc || it.src, 'video'); }); page.appendChild(v); }
+        else if (it.type === 'audio') { const c = document.createElement('div'); c.className = 'music-card';
+          c.innerHTML = `<img src="images/Playicon.png" class="play-btn" alt="Play" /><div><strong>${esc(it.title||'Track')}</strong></div>`;
+          const au = document.createElement('audio'); au.src = it.src; const btn = c.querySelector('.play-btn');
+          btn.addEventListener('click', (e) => { e.stopPropagation(); if (au.paused) { au.play().catch(()=>{}); btn.src='images/Pauseicon.png'; } else { au.pause(); btn.src='images/Playicon.png'; } });
+          au.addEventListener('ended', () => btn.src = 'images/Playicon.png'); c.appendChild(au); page.appendChild(c); }
+        else if (it.type === 'file') { const b = document.createElement('button'); b.className = 'load-btn'; b.textContent = it.title || 'Read file';
+          const box = document.createElement('div'); box.className = 'text-viewer';
+          b.addEventListener('click', () => { if (window.loadText) { box.id = box.id || uid('tv'); window.loadText(it.src, box.id); } });
+          page.appendChild(b); page.appendChild(box); }
+      });
+      const container = q('#projectsPopup .projects-desktop'); if (container) container.appendChild(page);
+    });
+  }
+
+  function openProjectPage(pageId, folder) {
+    qa('#projectsPopup .projects-page').forEach((p) => p.classList.remove('active'));
+    const pg = document.getElementById(pageId); if (pg) pg.classList.add('active');
+    qa('#projectsPopup .folder').forEach((f) => f.classList.remove('open'));
+    folder && folder.classList.add('open');
+    const back = q('#projectsBackBtn'); if (back) back.style.display = 'block';
+  }
+  global.rwaOpenProjectPage = openProjectPage;
+
+  function applyPet() {
+    const p = state.apps.pet;
+    global.__petMoods = (p.moods || []).map((m) => m.label);
+    global.__petMoodMap = {}; (p.moods || []).forEach((m) => (global.__petMoodMap[m.label] = m.img));
+    const petImg = q('#pet'); const cur = q('#petMood');
+    if (petImg && cur && global.__petMoodMap[cur.textContent] ) petImg.src = global.__petMoodMap[cur.textContent];
+    const icon = q('.folder.app-icon[onclick*="openPetApp"] img'); if (icon && p.icon) icon.src = p.icon;
+    // room background behind the pet (like a pet-game room)
+    const stage = q('#petApp .pet-stage');
+    if (stage) {
+      if (p.roomBg) { stage.style.backgroundImage = `url("${p.roomBg}")`; stage.style.backgroundSize = 'cover'; stage.style.backgroundPosition = 'center'; stage.classList.add('rwa-has-room'); }
+       else { stage.style.backgroundImage = ''; stage.classList.remove('rwa-has-room'); }
+    }
+    const help = q('#petHelpTooltip'); if (help && p.helpText != null) help.textContent = p.helpText;
+    const hint = q('#petApp .pet-hint'); if (hint && p.hintText != null) hint.textContent = p.hintText;
+  }
+
+  function applyAppIcons() {
+    const map = {
+      'openPaintApp': state.apps.painting.icon,
+      'openNotesApp': state.apps.notes.icon,
+      'openFeedbackApp': state.apps.feedback.icon,
+      'openGoalApp': state.apps.goals.icon,
+    };
+    Object.entries(map).forEach(([fn, src]) => { const im = q(`.folder.app-icon[onclick*="${fn}"] img`); if (im && src) im.src = src; });
+  }
+
+  function applyNotes() {
+    const n = state.apps.notes;
+    const host = q('#notesDetailPage .sticky-colors');
+    if (host) {
+      qa('.color-swatch', host).forEach((b) => b.remove());
+      (n.colors || []).forEach((c) => { const b = document.createElement('button'); b.className = 'color-swatch'; b.dataset.color = c; b.style.background = c;
+        b.addEventListener('click', () => { const ta = q('#notesArea'); void ta; }); host.appendChild(b); });
+    }
+    let styleTag = q('#rwa-notes-bg'); if (!styleTag) { styleTag = document.createElement('style'); styleTag.id = 'rwa-notes-bg'; document.head.appendChild(styleTag); }
+    styleTag.textContent = n.bgImage
+      ? `.sticky-note{background-image:url("${n.bgImage}") !important;background-size:cover !important;background-position:center !important;}`
+      : '';
+  }
+
+    function applyGoals() {
+    const g = state.apps.goals || {};
+    let st = document.getElementById('rwa-goals-style');
+    if (!st) { st = document.createElement('style'); st.id = 'rwa-goals-style'; document.head.appendChild(st); }
+    st.textContent = `
+      .goal-widget{ background:linear-gradient(135deg, ${g.lightFrom || '#b58dff'}, ${g.lightTo || '#8f4bd4'}) !important; }
+      body.dark .goal-widget{ background:linear-gradient(135deg, ${g.darkFrom || '#5a2da6'}, ${g.darkTo || '#2a0d5e'}) !important; }
+      .goal-widget .gw-fill{ background:linear-gradient(90deg, ${g.barFrom || '#ffe27a'}, ${g.barTo || '#ffb84d'}) !important; }
+      ${g.starIcon ? `.goal-widget .gw-star{ background-image:url("${g.starIcon}") !important; }` : ''}
+    `;
+    applyAppIcons();
+  }
+
+
+  function applyCanvas() {
+    const c = q('#paintCanvas'); if (c) { c.style.maxWidth = state.apps.painting.canvasW + 'px'; }
+  }
+
+  /* ---- sequential background-music queue ---- */
+  function setupMusicQueue() {
+    const music = q('#bg-music'); if (!music) return;
+    let idx = 0;
+    function loadTrack(i) {
+      const qarr = state.audio.queue || []; if (!qarr.length) return;
+      idx = ((i % qarr.length) + qarr.length) % qarr.length;
+      const src = qarr[idx].src; const cur = music.querySelector('source');
+      if (cur) cur.src = src; else music.src = src;
+      music.volume = state.audio.volume ?? 0.7; music.loop = qarr.length === 1;
+      music.load();
+    }
+    music.addEventListener('ended', () => { const qarr = state.audio.queue || []; if (qarr.length > 1) { loadTrack(idx + 1); music.play().catch(()=>{}); } });
+    global.__rwaReloadMusic = () => { const wasPlaying = !music.paused; loadTrack(0); if (wasPlaying) music.play().catch(()=>{}); };
+    loadTrack(0);
+    subscribe('audio.volume', () => { music.volume = state.audio.volume ?? 0.7; });
+  }
+
+  function applyAll() {
+    try { applyTheme(); } catch(e){ console.warn(e); }
+    try { applyPositions(); } catch(e){ console.warn(e); }
+    try { applyAssets(); } catch(e){ console.warn(e); }
+    try { applyArtist(); } catch(e){ console.warn(e); }
+    try { applyLinks(); } catch(e){ console.warn(e); }
+    try { applyScene(); } catch(e){ console.warn(e); }
+    try { applyProjects(); } catch(e){ console.warn(e); }
+    try { applyPet(); } catch(e){ console.warn(e); }
+    try { applyAppIcons(); } catch(e){ console.warn(e); }
+    try { applyNotes(); } catch(e){ console.warn(e); }
+    try { applyGoals(); } catch(e){ console.warn(e); }
+    try { applyCanvas(); } catch(e){ console.warn(e); }
+  }
+
+  subscribe('theme', applyTheme);
+  subscribe('positions', applyPositions);
+  subscribe('assets', applyAssets);
+  subscribe('artist', applyArtist);
+  subscribe('links', applyLinks);
+  subscribe('sceneSections', applyScene);
+  subscribe('projects', applyProjects);
+  subscribe('apps.pet', applyPet);
+  subscribe('apps.notes', applyNotes);
+  subscribe('apps.goals', applyGoals);
+  subscribe('apps.painting', applyCanvas);
+  subscribe('apps.feedback', applyAppIcons);
+  subscribe('audio.queue', () => global.__rwaReloadMusic && global.__rwaReloadMusic());
+
+  function onReady(fn) { if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fn); else fn(); }
+  onReady(() => {
+    applyAll(); setupMusicQueue();
+    new MutationObserver(() => { applyTheme(); applyGoals(); })
+      .observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  });
+
+  /* =========================================================
+     SETTINGS UI  (desktop sidebar+hub  /  portrait drill-down)
+     ========================================================= */
+  const ICONS = {
+    theme:'<svg viewBox="0 0 24 24"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2a10 10 0 1 0 0 20c1.1 0 2-.9 2-2 0-.5-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-1 .8-1.8 1.8-1.8H16a6 6 0 0 0 6-6c0-4.4-4.5-8-10-8z"/></svg>',
+    artist:'<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>',
+    scene:'<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg>',
+    links:'<svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg>',
+    projects:'<svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>',
+    music:'<svg viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg>',
+    apps:'<svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
+    gear:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>',
+    brush:'<svg viewBox="0 0 24 24"><path d="M4 20c2 0 3-1 3-3 0-1.5 1.5-2 2.5-1S11 18 9 20c-1.3 1.3-5 1-5 0z"/><path d="M9 15l9-9a2 2 0 0 0-3-3l-9 9"/></svg>',
+    monitor:'<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>',
+    video:'<svg viewBox="0 0 24 24"><rect x="3" y="6" width="12" height="12" rx="2"/><path d="M15 10l6-3v10l-6-3"/></svg>',
+    plus:'<svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>',
+    folder:'<svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>',
+    folderPlus:'<svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M12 11v4M10 13h4"/></svg>',
+    image:'<svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.6"/><path d="M4 18l5-5 4 4 3-3 4 4"/></svg>',
+    text:'<svg viewBox="0 0 24 24"><path d="M5 5h14M12 5v14M8 19h8"/></svg>',
+    bag:'<svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+    heart:'<svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9C1 8.5 3 5 6.5 5 9 5 12 8 12 8s3-3 5.5-3C21 5 23 8.5 21.5 12 19 16.5 12 21 12 21z"/></svg>',
+    star:'<svg viewBox="0 0 24 24"><path d="M12 3l2.9 6 6.6.9-4.8 4.6 1.2 6.6L12 18.6 6.1 21.7l1.2-6.6L2.5 9.9 9.1 9z"/></svg>',
+    chat:'<svg viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>',
+    note:'<svg viewBox="0 0 24 24"><path d="M5 3h10l4 4v14H5z"/><path d="M15 3v4h4"/></svg>',
+    paw:'<svg viewBox="0 0 24 24"><circle cx="6" cy="10" r="2"/><circle cx="10" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="18" cy="10" r="2"/><path d="M8 16c0-2.5 1.8-4 4-4s4 1.5 4 4-1.8 4-4 4-4-1.5-4-4z"/></svg>',
+    sound:'<svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M17 8a5 5 0 0 1 0 8"/></svg>',
+    move:'<svg viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M9 5l3-3 3 3M9 19l3 3 3-3M5 9l-3 3 3 3M19 9l3 3-3 3"/></svg>',
+    droplet:'<svg viewBox="0 0 24 24"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg>',
+    spotify:'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M7 10c3-1 7-.8 10 1M7.5 13.5c2.5-.8 5.5-.6 8 .8M8 16.5c2-.6 4-.4 6 .5"/></svg>',
+  };
+  const icon = (n) => ICONS[n] || ICONS.gear;
+
+  const CATEGORIES = [
+    { id:'theme',    title:'Web Theme',             icon:'theme',    sub:'Colors, gradients, positions & images' },
+    { id:'artist',   title:'Artist pop-up',         icon:'artist',   sub:'Photo, bio, bag, things I enjoy' },
+    { id:'scene',    title:'Scene pop-up',          icon:'scene',    sub:'Painting, digital, video sections' },
+    { id:'links',    title:'Links pop-up',          icon:'links',    sub:'Bubble text & social links' },
+    { id:'projects', title:'More projects',         icon:'projects', sub:'Project folders & their contents' },
+    { id:'music',    title:'Music / Stars settings',icon:'music',    sub:'Track queue, sounds & Spotify' },
+    { id:'apps',     title:'Apps settings',         icon:'apps',     sub:'Paint, Feedback, Notes, Goals, Pet' },
+  ];
+
+  const panel = () => document.getElementById('rwaPanel');
+  const isPortrait = () => window.matchMedia('(max-width: 900px) and (orientation:portrait), (max-width: 768px)').matches;
+  const el = (html) => { const d = document.createElement('div'); d.innerHTML = html.trim(); return d.firstElementChild; };
+
+  let activeCat = 'theme';
+
+  onReady(initSettings);
+  function initSettings() {
+    if (!panel()) return;
+    syncDark(); renderSidebar(); renderSidebarFooter(); renderMobileShell();
+    openCategory('theme'); showMobileList();
+    bindSpotify();
+  }
+
+  function syncDark() {
+    const root = document.getElementById('rwaSetRoot'); if (!root) return;
+    const apply = () => root.classList.toggle('rwa-dark', isDark());
+    apply(); new MutationObserver(apply).observe(document.body, { attributes:true, attributeFilter:['class'] });
+  }
+
+  /* ---- desktop sidebar ---- */
+  function renderSidebar() {
+    const nav = q('.rwa-sidebar-nav', panel()); nav.innerHTML = '';
+    CATEGORIES.forEach((cat, i) => {
+    const b = el(`<button class="rwa-tab-btn" data-cat="${cat.id}"><span class="rwa-tab-icon rwa-c${i % 8}">${icon(cat.icon)}</span><span class="rwa-tab-label">${cat.title}</span><span class="rwa-arrow">\u2192</span></button>`);
+      b.addEventListener('click', () => openCategory(cat.id));
+      nav.appendChild(b);
+    });
+  }
+  function actionBtn(label, ic, fn) {
+    const b = el(`<button type="button" class="rwa-footer-btn">${icon(ic)}<span>${label}</span></button>`);
+    b.addEventListener('click', fn); return b;
+  }
+
+  function resetConfig() {
+    if (!confirm('Reset ALL settings back to how they were originally? Your notes and goals are kept.')) return;
+    API.reset();
+    applyAll();
+    try { openCategory(activeCat); } catch (_) {}
+    alert('Settings reset \u2713');
+  }
+
+  function renderSidebarFooter() {
+    const foot = q('.rwa-sidebar-footer', panel()); foot.innerHTML = '';
+    foot.append(actionBtn('Lock','gear',lockSettings), actionBtn('Export','move',exportConfig), actionBtn('Import','plus',importConfig));
+  }
+
+  /* ---- portrait shell ---- */
+  function renderMobileShell() {
+    const m = q('.rwa-mobile-view', panel());
+    m.innerHTML = `
+      <div class="rwa-mobile-list">
+        <h2 class="rwa-mobile-title">Settings</h2>
+        <div class="rwa-card-list"></div>
+        <div class="rwa-mobile-footer"></div>
+      </div>
+      <div class="rwa-mobile-detail" hidden>
+        <div class="rwa-mobile-detail-head"><button type="button" class="rwa-back-btn">\u2039 Back</button><h3></h3></div>
+        <div class="rwa-mobile-detail-body"></div>
+      </div>`;
+    const list = q('.rwa-card-list', m);
+    CATEGORIES.forEach((cat, i) => {
+      const card = optionCard(cat.title, cat.sub, cat.icon, i, () => openCategory(cat.id));
+      list.appendChild(card);
+    });
+    const foot = q('.rwa-mobile-footer', m);
+    foot.append(actionBtn('Lock','gear',lockSettings), actionBtn('Export','move',exportConfig), actionBtn('Import','plus',importConfig));
+    q('.rwa-back-btn', m).addEventListener('click', () => {
+      // back from detail -> category hub list (Settings list)
+      showMobileList();
+    });
+  }
+  function showMobileList() {
+    const m = q('.rwa-mobile-view', panel()); if (!m) return;
+    q('.rwa-mobile-detail', m).hidden = true; q('.rwa-mobile-list', m).hidden = false;
+  }
+  function showMobileDetail(title, buildFn, backFn) {
+    const m = q('.rwa-mobile-view', panel());
+    q('.rwa-mobile-list', m).hidden = true;
+    const d = q('.rwa-mobile-detail', m); d.hidden = false;
+    q('h3', d).textContent = title;
+    const body = q('.rwa-mobile-detail-body', d); body.innerHTML = '';
+    q('.rwa-back-btn', d).onclick = backFn || showMobileList;
+    buildFn(body);
+  }
+
+  /* ---- option card factory ---- */
+  function optionCard(title, sub, ic, colorIdx, onClick) {
+    const c = el(`<button class="rwa-option-card">
+      <span class="rwa-option-icon rwa-c${colorIdx % 8}">${icon(ic)}</span>
+      <span class="rwa-option-text"><span class="rwa-option-title">${title}</span><span class="rwa-option-sub">${sub}</span></span>
+      <span class="rwa-option-chevron">\u203a</span></button>`);
+    c.addEventListener('click', onClick); return c;
+  }
+
+  /* ---- open a category (shows its hub of sub-cards) ---- */
+  function openCategory(id) {
+    activeCat = id;
+    const cat = CATEGORIES.find((c) => c.id === id) || CATEGORIES[0];
+    qa('.rwa-tab-btn', panel()).forEach((b) => b.classList.toggle('active', b.dataset.cat === cat.id));
+    q('#rwaMainTitle').textContent = cat.title;
+    q('#rwaMainSub').textContent = 'Tap a card to configure this section.';
+    renderHub(q('.rwa-main-body', panel()), id, false);
+    if (isPortrait()) showMobileDetail(cat.title, (body) => renderHub(body, id, true), showMobileList);
+  }
+
+  /* ---- render the sub-card hub for a category ---- */
+  function renderHub(host, catId, portrait) {
+    host.innerHTML = '';
+    const list = el('<div class="rwa-card-list"></div>'); host.appendChild(list);
+    const cards = subCards(catId);
+    cards.forEach((sc, i) => {
+      const card = optionCard(sc.title, sc.desc, sc.icon, sc.colorIdx != null ? sc.colorIdx : i, () => openEditor(catId, sc, portrait));
+      list.appendChild(card);
+    });
+  }
+
+  /* ---- open a specific editor (drill-down) ---- */
+  function openEditor(catId, sc, portrait) {
+    const cat = CATEGORIES.find((c) => c.id === catId);
+    if (portrait) {
+      showMobileDetail(sc.title, (body) => sc.render(body), () => openCategory(catId));
+    } else {
+      const host = q('.rwa-main-body', panel()); host.innerHTML = '';
+      const back = el(`<button class="rwa-editor-back">\u2039 ${cat.title}</button>`);
+      back.addEventListener('click', () => openCategory(catId));
+      host.appendChild(back);
+      host.appendChild(el(`<h3 class="rwa-editor-title">${sc.title}</h3>`));
+      const body = el('<div></div>'); host.appendChild(body); sc.render(body);
+    }
+  }
+
+  /* ---- lock / export / import ---- */
+  function lockSettings() { if (typeof global.rwaLockSettings === 'function') global.rwaLockSettings(); }
+  function exportConfig() { API.exportFile('rwa-settings.json'); }
+  function importConfig() {
+    const inp = document.getElementById('rwaImportFile'); if (!inp) return;
+    inp.value = ''; inp.onchange = () => {
+      const f = inp.files && inp.files[0]; if (!f) return;
+      if (!confirm('Import will replace ALL current website settings & content. Continue?')) return;
+      API.importFile(f).then(() => { applyAll(); openCategory(activeCat); alert('Import complete \u2713'); })
+        .catch((e) => alert('Import failed: ' + e.message));
+    };
+    inp.click();
+  }
+
+  /* =========================================================
+     EDITOR CONTROL BUILDERS
+     ========================================================= */
+  function status(host) { const s = el('<div class="rwa-status"></div>'); host.appendChild(s);
+    return (msg, ok = true) => { s.textContent = msg; s.className = 'rwa-status ' + (ok ? 'ok' : 'err'); if (ok) setTimeout(() => { s.textContent = ''; }, 1800); }; }
+
+  function field(label, inner) { return el(`<label class="rwa-field"><span>${label}</span>${inner}</label>`); }
+  function group(t) { return el(`<div class="rwa-group-title">${t}</div>`); }
+
+  function textField(host, label, path, area) {
+    const val = API.get(path) ?? '';
+    const f = field(label, area
+      ? `<textarea class="rwa-textarea">${esc(val)}</textarea>`
+      : `<input class="rwa-input" type="text" value="${esc(val)}">`);
+    const inp = q('input,textarea', f);
+    const st = status(host);
+    inp.addEventListener('input', () => { try { API.set(path, inp.value); st('Saved \u2713'); } catch (e) { st('Save failed: ' + e.message, false); } });
+    host.appendChild(f);
+  }
+
+  // multi-line bullet list bound to artist.aboutList
+  function aboutListField(host) {
+    const val = (API.get('artist.aboutList') || []).join('\n');
+    const f = field('Bullet list', `<textarea class="rwa-textarea">${esc(val)}</textarea>`);
+    const ta = q('textarea', f); const st = status(host);
+    ta.addEventListener('input', () => { const arr = ta.value.split('\n').map((x) => x.trim()).filter(Boolean); API.set('artist.aboutList', arr); st('Saved \u2713'); });
+    host.appendChild(f);
+  }
+
+  function numberField(host, label, path) {
+    const f = field(label, `<input class="rwa-input" type="number" value="${esc(API.get(path))}">`);
+    const inp = q('input', f); const st = status(host);
+    inp.addEventListener('change', () => { const n = Number(inp.value); if (Number.isNaN(n)) return st('Enter a number', false); API.set(path, n); st('Saved \u2713'); });
+    host.appendChild(f);
+  }
+
+  function colorField(host, label, path) {
+    const val = API.get(path) || '#ffffff';
+    const f = field(label, `<div class="rwa-color-row"><input type="color" value="${esc(val)}"><input type="text" class="rwa-input" style="max-width:140px" value="${esc(val)}"></div>`);
+    const [pick, hex] = qa('input', f);
+    pick.addEventListener('input', () => { hex.value = pick.value; API.set(path, pick.value); });
+    hex.addEventListener('change', () => { pick.value = hex.value; API.set(path, hex.value); });
+    host.appendChild(f);
+  }
+
+  function toggleField(host, label, path) {
+    const f = el(`<label class="rwa-field rwa-check"><input type="checkbox" ${API.get(path) ? 'checked' : ''}><span>${label}</span></label>`);
+    q('input', f).addEventListener('change', (e) => API.set(path, e.target.checked));
+    host.appendChild(f);
+  }
+
+  function rangeField(host, label, path, min, max, step, suffix) {
+    const val = API.get(path);
+    const f = field(label, `<div class="rwa-gradient-row"><input type="range" min="${min}" max="${max}" step="${step}" value="${val}"><span class="rwa-angle-label">${val}${suffix||''}</span></div>`);
+    const r = q('input', f), lbl = q('.rwa-angle-label', f);
+    r.addEventListener('input', () => { lbl.textContent = r.value + (suffix||''); API.set(path, Number(r.value)); });
+    host.appendChild(f);
+  }
+
+  // image control: preview + Upload + path
+  function imageControl(host, label, getSrc, setSrc) {
+    const val = getSrc() || '';
+    const card = el(`<div class="rwa-img-card">
+      <span class="rwa-img-thumb"><img alt="" src="${esc(val)}"></span>
+      <span class="rwa-img-meta">
+        <span class="rwa-img-name">${label}</span>
+        <input class="rwa-input" type="text" value="${esc(val)}" placeholder="images/\u2026">
+        <span class="rwa-img-actions">
+          <button type="button" class="rwa-btn rwa-btn-primary rwa-up">Change / Upload</button>
+        </span>
+      </span></div>`);
+    const img = q('img', card), pathInp = q('input', card), upBtn = q('.rwa-up', card);
+    const st = status(host);
+    const commit = (src) => { try { setSrc(src); img.src = src; pathInp.value = src; st('Saved \u2713'); } catch (e) { st('Save failed', false); } };
+    pathInp.addEventListener('change', () => commit(pathInp.value));
+    upBtn.addEventListener('click', () => {
+      const fi = document.createElement('input'); fi.type = 'file'; fi.accept = 'image/*';
+      fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader();
+        r.onload = () => commit(r.result); r.onerror = () => st('Could not read file', false); r.readAsDataURL(f); };
+      fi.click();
+    });
+    host.appendChild(card);
+  }
+
+  // list editor with drag reorder, image thumb, title, delete (confirmed)
+  function listEditor(host, path, opts) {
+    opts = opts || {};
+    const wrap = el('<div class="rwa-sub-list"></div>'); host.appendChild(wrap);
+    const addBtn = el(`<button type="button" class="rwa-add-btn">${opts.addLabel || '+ Add item'}</button>`); host.appendChild(addBtn);
+    const render = () => {
+      wrap.innerHTML = '';
+      const items = API.get(path) || [];
+      if (!items.length) wrap.appendChild(el('<p class="rwa-empty">Nothing here yet.</p>'));
+      items.forEach((item) => {
+        const row = el('<div class="rwa-sub-item" draggable="true"></div>');
+        row.dataset.id = item.id;
+        row.appendChild(el('<span class="rwa-drag" title="Drag to reorder">\u2630</span>'));
+        if (opts.image) {
+          const th = el(`<img class="rwa-sub-thumb" src="${esc(item[opts.image] || '')}" alt="">`);
+          const up = el('<button type="button" class="rwa-icon-btn" title="Change image">\u{1F5BC}</button>');
+          up.addEventListener('click', () => { const fi = document.createElement('input'); fi.type = 'file'; fi.accept = 'image/*';
+            fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => API.listUpdate(path, item.id, { [opts.image]: r.result }); r.readAsDataURL(f); }; fi.click(); });
+          row.append(th, up);
+        }
+        (opts.fields || ['label']).forEach((fname) => {
+          const inp = el(`<input class="rwa-input" placeholder="${fname}" value="${esc(item[fname] || '')}">`);
+          inp.addEventListener('change', () => API.listUpdate(path, item.id, { [fname]: inp.value }));
+          row.appendChild(inp);
+        });
+        const rm = el('<button type="button" class="rwa-icon-btn rwa-del" title="Delete">\u2715</button>');
+        rm.addEventListener('click', () => { if (confirm(`Delete "${item[opts.fields ? opts.fields[0] : 'label'] || 'this item'}"? This cannot be undone.`)) API.listRemove(path, item.id); });
+        row.appendChild(rm);
+        // drag reorder
+        row.addEventListener('dragstart', () => row.classList.add('rwa-dragging'));
+        row.addEventListener('dragend', () => { row.classList.remove('rwa-dragging'); const ids = qa('.rwa-sub-item', wrap).map((r) => r.dataset.id); API.listReorder(path, ids); });
+        wrap.appendChild(row);
+      });
+    };
+    wrap.addEventListener('dragover', (e) => { e.preventDefault();
+      const dragging = q('.rwa-dragging', wrap); if (!dragging) return;
+      const after = [...qa('.rwa-sub-item:not(.rwa-dragging)', wrap)].find((c) => e.clientY < c.getBoundingClientRect().top + c.offsetHeight / 2);
+      if (after) wrap.insertBefore(dragging, after); else wrap.appendChild(dragging);
+    });
+    addBtn.addEventListener('click', () => { const item = {}; (opts.fields || ['label']).forEach((f) => item[f] = ''); if (opts.image) item[opts.image] = ''; if (opts.defaults) Object.assign(item, opts.defaults); API.listAdd(path, item); });
+    render(); API.subscribe(path, render);
+  }
+
+  /* =========================================================
+     SUB-CARDS PER CATEGORY
+     ========================================================= */
+  function subCards(catId) {
+    switch (catId) {
+      case 'theme': return [
+        { title:'Background color', desc:'Light & dark background + gradient', icon:'droplet', colorIdx:0, render:themeBackground },
+        { title:'Frame color', desc:'Light & dark frame + gradient', icon:'brush', colorIdx:1, render:themeFrame },
+        { title:'Position of elements', desc:'Move homepage elements', icon:'move', colorIdx:2, render:themePositions },
+        { title:'Change pictures of elements', desc:'Swap homepage images', icon:'image', colorIdx:3, render:themeImages },
+      ];
+      case 'artist': return [
+        { title:'"Meet the artist" image', desc:'Change the portrait', icon:'image', colorIdx:0, render:(h)=>imageControl(h,'Meet the artist image',()=>API.get('artist.meetImage'),(v)=>API.set('artist.meetImage',v)) },
+        { title:'Bag images', desc:'Edit, reorder, add bag items', icon:'bag', colorIdx:1, render:(h)=>listEditor(h,'artist.bag',{fields:['label'],image:'img',addLabel:'+ Add bag item'}) },
+        { title:'"Items I enjoy" images', desc:'Edit, reorder, add items', icon:'heart', colorIdx:2, render:(h)=>listEditor(h,'artist.enjoy',{fields:['label'],image:'img',addLabel:'+ Add item'}) },
+        { title:'Edit "Meet the artist" text', desc:'Name, pronouns & bullet list', icon:'text', colorIdx:3, render:(h)=>{textField(h,'Label','artist.meetText');textField(h,'Name','artist.name');textField(h,'Pronouns','artist.pronouns');h.appendChild(group('Bullet list (one line = one bullet)'));aboutListField(h);} },
+        { title:'Edit "More about me" text', desc:'The expandable bio', icon:'text', colorIdx:4, render:(h)=>textField(h,'More about me','artist.moreText',true) },
+        { title:'Edit last text', desc:'Closing paragraph', icon:'text', colorIdx:5, render:(h)=>textField(h,'Last text','artist.endingText',true) },
+      ];
+      case 'scene': {
+        const secs = API.get('sceneSections') || [];
+        const cards = secs.map((s, i) => ({ title:s.title + ' section', desc:'Manage ' + s.title.toLowerCase(), icon:(s.items&&s.items[0]&&s.items[0].type==='video')?'video':'image', colorIdx:i, render:(h)=>sceneSectionEditor(h, s.id) }));
+        cards.push({ title:'Add more sections', desc:'Create a new section', icon:'plus', colorIdx:3, render:sceneAddSection });
+        return cards;
+      }
+      case 'links': return [
+        { title:'Manage links', desc:'Icons, titles, URLs & order', icon:'links', colorIdx:0, render:linksManage },
+        { title:'Edit bubble text', desc:'The speech-bubble message', icon:'chat', colorIdx:1, render:(h)=>textField(h,'Bubble text','links.bubbleText') },
+      ];
+      case 'projects': {
+        const folders = API.get('projects.folders') || [];
+        const cards = folders.map((f, i) => ({ title:f.title, desc:'Edit existing project folders', icon:'folder', colorIdx:i, render:(h)=>projectFolderEditor(h, f.id) }));
+        cards.push({ title:'Add new folder', desc:'Create a new project folder', icon:'folderPlus', colorIdx:7, render:projectAddFolder });
+        return cards;
+      }
+      case 'music': return [
+        { title:'Three-Star music', desc:'Queue, order, add & replace', icon:'music', colorIdx:0, render:musicQueueEditor },
+        { title:'System sounds', desc:'Click & close sounds', icon:'sound', colorIdx:1, render:systemSoundsEditor },
+        { title:'Spotify mini-player', desc:'Playlist for the 3-star player', icon:'spotify', colorIdx:3, render:spotifyEditor },
+      ];
+      case 'apps': return [
+        { title:'Painting App', desc:'Icon, canvas size & tools', icon:'brush', colorIdx:0, render:appPainting },
+        { title:'Feedback App', desc:'Icon & how feedback is sent', icon:'chat', colorIdx:3, render:appFeedback },
+        { title:'Notes App', desc:'Icon, sticky colors & background', icon:'note', colorIdx:5, render:appNotes },
+        { title:'Goals App', desc:'Icons & widget colors', icon:'star', colorIdx:7, render:appGoals },
+        { title:'Pet App', desc:'Icon & moods', icon:'paw', colorIdx:6, render:appPet },
+      ];
+      default: return [];
+    }
+  }
+
+  /* ---------- THEME EDITORS ---------- */
+  function bgPreview() {
+    const box = el('<div class="rwa-mini-preview"><span class="rwa-mini-label">Live preview</span></div>');
+    const paint = () => { const t = API.get('theme'), dark = isDark();
+      const bg = dark ? t.darkBg : t.lightBg, g = dark ? t.darkBgGrad : t.lightBgGrad;
+      box.style.background = (g && g.on) ? `linear-gradient(${g.angle}deg,${bg},${g.color2})` : bg; };
+    paint(); API.subscribe('theme', paint); return box;
+  }
+  function framePreview() {
+    const box = el('<div class="rwa-mini-preview" style="background:#3a1a5e"><div class="rwa-mini-frame"></div><span class="rwa-mini-label">Live preview</span></div>');
+    const fr = box.querySelector('.rwa-mini-frame');
+    const paint = () => { const t = API.get('theme'), dark = isDark();
+      const c = dark ? t.darkFrame : t.lightFrame, g = dark ? t.darkFrameGrad : t.lightFrameGrad;
+      fr.style.background = (g && g.on) ? `linear-gradient(${g.angle}deg,${c},${g.color2})` : c; };
+    paint(); API.subscribe('theme', paint); return box;
+  }
+  
+  function themeBackground(host) {
+  host.appendChild(bgPreview());
+
+  host.appendChild(group('Light mode'));
+  colorField(host, 'Light background', 'theme.lightBg');
+  colorField(host, 'Light frame-cover circles', 'theme.lightCover');
+  toggleField(host, 'Use gradient (light)', 'theme.lightBgGrad.on');
+  colorField(host, 'Light gradient 2nd color', 'theme.lightBgGrad.color2');
+  rangeField(host, 'Light gradient angle', 'theme.lightBgGrad.angle', 0, 360, 1, '\u00b0');
+
+  host.appendChild(group('Dark mode'));
+  colorField(host, 'Dark background', 'theme.darkBg');
+  colorField(host, 'Dark frame-cover circles', 'theme.darkCover');
+  toggleField(host, 'Use gradient (dark)', 'theme.darkBgGrad.on');
+  colorField(host, 'Dark gradient 2nd color', 'theme.darkBgGrad.color2');
+  rangeField(host, 'Dark gradient angle', 'theme.darkBgGrad.angle', 0, 360, 1, '\u00b0');
+
+  host.appendChild(group('Text'));
+  colorField(host, 'Light text', 'theme.lightText');
+  colorField(host, 'Dark text', 'theme.darkText');
+
+  host.appendChild(group('Section dividers'));
+  colorField(host, 'Light divider color', 'theme.lightDivider');
+  colorField(host, 'Dark divider color', 'theme.darkDivider');
+}
+
+  function themeFrame(host) {
+    host.appendChild(framePreview());
+    host.appendChild(group('Light mode'));
+    colorField(host, 'Light frame color', 'theme.lightFrame');
+    toggleField(host, 'Use gradient (light)', 'theme.lightFrameGrad.on');
+    colorField(host, 'Light gradient 2nd color', 'theme.lightFrameGrad.color2');
+    rangeField(host, 'Light gradient angle', 'theme.lightFrameGrad.angle', 0, 360, 1, '\u00b0');
+    host.appendChild(group('Dark mode'));
+    colorField(host, 'Dark frame color', 'theme.darkFrame');
+    toggleField(host, 'Use gradient (dark)', 'theme.darkFrameGrad.on');
+    colorField(host, 'Dark gradient 2nd color', 'theme.darkFrameGrad.color2');
+    rangeField(host, 'Dark gradient angle', 'theme.darkFrameGrad.angle', 0, 360, 1, '\u00b0');
+  }
+  function themePositions(host) {
+    host.appendChild(el('<p class="rwa-editor-hint">Drag a dot, or type exact pixel values. Changes apply to the homepage instantly.</p>'));
+    const pad = el('<div class="rwa-pos-pad"></div>'); host.appendChild(pad);
+    const defs = [['scene','S','Scene'],['linkStar','L','Link star'],['projects','P','More projects'],['face','F','Face']];
+    defs.forEach(([key, letter, name]) => {
+      const cur = API.get('positions.' + key) || {};
+      const row = el(`<div class="rwa-field"><span>${name}</span><div class="rwa-gradient-row">X <input class="rwa-input" style="max-width:100px" type="number" value="${cur.x ?? ''}"> Y <input class="rwa-input" style="max-width:100px" type="number" value="${cur.y ?? ''}"><button type="button" class="rwa-btn rwa-btn-ghost rwa-rst">Reset</button></div></div>`);
+      const [xi, yi] = qa('input', row);
+      const commit = () => API.set('positions.' + key, { x: xi.value === '' ? null : +xi.value, y: yi.value === '' ? null : +yi.value });
+      xi.addEventListener('change', commit); yi.addEventListener('change', commit);
+      q('.rwa-rst', row).addEventListener('click', () => { API.reset('positions.' + key); xi.value = ''; yi.value = ''; place(); });
+      host.appendChild(row);
+      const node = el(`<div class="rwa-pos-node">${letter}</div>`); pad.appendChild(node);
+      function place() { const c = API.get('positions.' + key) || {}; node.style.left = ((c.x ?? 120) / Math.max(window.innerWidth,1) * 100) + '%'; node.style.top = ((c.y ?? 120) / Math.max(window.innerHeight,1) * 100) + '%'; }
+      requestAnimationFrame(place);
+      let drag = false;
+      node.addEventListener('pointerdown', (e) => { drag = true; node.setPointerCapture(e.pointerId); node.classList.add('dragging'); });
+      node.addEventListener('pointermove', (e) => { if (!drag) return; const r = pad.getBoundingClientRect();
+        const px = Math.min(Math.max(e.clientX - r.left, 0), r.width), py = Math.min(Math.max(e.clientY - r.top, 0), r.height);
+        node.style.left = (px / r.width * 100) + '%'; node.style.top = (py / r.height * 100) + '%';
+        const x = Math.round(px / r.width * window.innerWidth), y = Math.round(py / r.height * window.innerHeight);
+        xi.value = x; yi.value = y; API.set('positions.' + key, { x, y }); });
+      node.addEventListener('pointerup', () => { drag = false; node.classList.remove('dragging'); });
+    });
+  }
+  function themeImages(host) {
+    const imgs = [
+      ['Scene image (light)','sceneLight'],['Scene image (dark)','sceneDark'],
+      ['Link star image','linkStar'],['More Projects image','moreProjects'],
+      ['Center face image','centerFace'],['Eyes','eyes'],
+      ['Clouds \u2014 light mode','cloudsLight'],['Clouds \u2014 dark mode','cloudsDark'],
+      ['Sun / Moon toggle','sunMoon'],['Three stars (music)','musicStars'],
+      ['Mute image','mute'],['Unmute image','unmute'],['Signature','signature'],
+    ];
+    imgs.forEach(([label, key]) => imageControl(host, label, () => API.get('assets.' + key), (v) => API.set('assets.' + key, v)));
+  }
+
+  /* ---------- SCENE EDITORS ---------- */
+  function sceneSectionEditor(host, secId) {
+    const idx = () => (API.get('sceneSections') || []).findIndex((s) => s.id === secId);
+    const sec = () => (API.get('sceneSections') || [])[idx()];
+    if (!sec()) { host.appendChild(el('<p class="rwa-empty">Section not found.</p>')); return; }
+    host.appendChild(group('Section title'));
+    const tf = field('Title', `<input class="rwa-input" value="${esc(sec().title)}">`); const tinp = q('input', tf);
+    tinp.addEventListener('input', () => API.update('sceneSections', (arr) => arr.map((s) => s.id === secId ? { ...s, title: tinp.value } : s)));
+    host.appendChild(tf);
+    host.appendChild(group('Content'));
+    host.appendChild(el('<p class="rwa-editor-hint">Images and videos keep their own type. Drag \u2630 to reorder.</p>'));
+    sceneItemList(host, secId);
+    const delBtn = el('<button type="button" class="rwa-btn rwa-btn-danger" style="margin-top:18px">Delete this section</button>');
+    delBtn.addEventListener('click', () => { const s = sec(); const n = (s.items || []).length;
+      if (confirm(`Delete section "${s.title}"?` + (n ? ` Its ${n} item(s) will also be deleted.` : '') + ' This cannot be undone.')) {
+        API.update('sceneSections', (arr) => arr.filter((x) => x.id !== secId)); openCategory('scene'); } });
+    host.appendChild(delBtn);
+  }
+  function sceneItemList(host, secId) {
+    const wrap = el('<div class="rwa-sub-list"></div>'); host.appendChild(wrap);
+    const addImg = el('<button type="button" class="rwa-add-btn">+ Add image</button>');
+    const addVid = el('<button type="button" class="rwa-add-btn">+ Add video</button>');
+    host.append(addImg, addVid);
+    const secItems = () => { const s = (API.get('sceneSections') || []).find((x) => x.id === secId); return s ? (s.items || []) : []; };
+    const mutate = (fn) => API.update('sceneSections', (arr) => arr.map((s) => s.id === secId ? { ...s, items: fn(deepClone(s.items || [])) } : s));
+    const render = () => {
+      wrap.innerHTML = '';
+      const items = secItems();
+      if (!items.length) wrap.appendChild(el('<p class="rwa-empty">No content yet.</p>'));
+      items.forEach((it) => {
+        const row = el('<div class="rwa-sub-item" draggable="true"></div>'); row.dataset.id = it.id;
+        row.appendChild(el('<span class="rwa-drag">\u2630</span>'));
+        row.appendChild(el(`<span class="rwa-tool-chip">${it.type}</span>`));
+        const srcInp = el(`<input class="rwa-input" placeholder="path/to/${it.type}" value="${esc(it.src || '')}">`);
+        srcInp.addEventListener('change', () => mutate((a) => a.map((x) => x.id === it.id ? { ...x, src: srcInp.value } : x)));
+        row.appendChild(srcInp);
+        const up = el('<button type="button" class="rwa-icon-btn" title="Upload">\u2191</button>');
+        up.addEventListener('click', () => { const fi = document.createElement('input'); fi.type = 'file'; fi.accept = it.type === 'video' ? 'video/*' : 'image/*';
+          fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => mutate((a) => a.map((x) => x.id === it.id ? { ...x, src: r.result } : x)); r.readAsDataURL(f); }; fi.click(); });
+        const rm = el('<button type="button" class="rwa-icon-btn rwa-del">\u2715</button>');
+        rm.addEventListener('click', () => { if (confirm('Delete this item?')) mutate((a) => a.filter((x) => x.id !== it.id)); });
+        row.append(up, rm);
+        row.addEventListener('dragstart', () => row.classList.add('rwa-dragging'));
+        row.addEventListener('dragend', () => { row.classList.remove('rwa-dragging'); const ids = qa('.rwa-sub-item', wrap).map((r) => r.dataset.id); mutate((a) => ids.map((id) => a.find((x) => x.id === id)).filter(Boolean)); });
+        wrap.appendChild(row);
+      });
+    };
+    wrap.addEventListener('dragover', (e) => { e.preventDefault(); const d = q('.rwa-dragging', wrap); if (!d) return;
+      const after = [...qa('.rwa-sub-item:not(.rwa-dragging)', wrap)].find((c) => e.clientY < c.getBoundingClientRect().top + c.offsetHeight / 2);
+      if (after) wrap.insertBefore(d, after); else wrap.appendChild(d); });
+    addImg.addEventListener('click', () => mutate((a) => { a.push({ id: uid(), type: 'image', src: '', title: '' }); return a; }));
+    addVid.addEventListener('click', () => mutate((a) => { a.push({ id: uid(), type: 'video', src: '', title: '' }); return a; }));
+    render(); API.subscribe('sceneSections', render);
+  }
+  function sceneAddSection(host) {
+    host.appendChild(el('<p class="rwa-editor-hint">Create a new section. It appears in the Scene pop-up immediately.</p>'));
+    const f = field('Section name', '<input class="rwa-input" placeholder="e.g. Sketches">'); const inp = q('input', f); host.appendChild(f);
+    const btn = el('<button type="button" class="rwa-btn rwa-btn-primary">Create section</button>');
+    const st = status(host);
+    btn.addEventListener('click', () => { const name = inp.value.trim(); if (!name) return st('Type a name first', false);
+      API.update('sceneSections', (arr) => { arr.push({ id: uid('sec'), title: name, desc: 'Manage ' + name.toLowerCase(), items: [] }); return arr; });
+      st('Created \u2713'); openCategory('scene'); });
+    host.appendChild(btn);
+  }
+
+  /* ---------- LINKS EDITOR ---------- */
+  function linksManage(host) {
+    host.appendChild(el('<p class="rwa-editor-hint">Every link shows its icon, title and URL. Drag \u2630 to reorder.</p>'));
+    const wrap = el('<div class="rwa-sub-list"></div>'); host.appendChild(wrap);
+    const add = el('<button type="button" class="rwa-add-btn">+ Add new link</button>'); host.appendChild(add);
+    const render = () => {
+      wrap.innerHTML = '';
+      const items = API.get('links.items') || [];
+      if (!items.length) wrap.appendChild(el('<p class="rwa-empty">No links yet.</p>'));
+      items.forEach((it) => {
+        const row = el('<div class="rwa-sub-item" draggable="true" style="flex-wrap:wrap"></div>'); row.dataset.id = it.id;
+        row.appendChild(el('<span class="rwa-drag">\u2630</span>'));
+        const th = el(`<img class="rwa-sub-thumb" src="${esc(it.icon || '')}" alt="">`);
+        const up = el('<button type="button" class="rwa-icon-btn" title="Change icon">\u{1F5BC}</button>');
+        up.addEventListener('click', () => { const fi = document.createElement('input'); fi.type = 'file'; fi.accept = 'image/*';
+          fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => API.listUpdate('links.items', it.id, { icon: r.result }); r.readAsDataURL(f); }; fi.click(); });
+        const ti = el(`<input class="rwa-input" placeholder="Title" style="flex:1 1 120px" value="${esc(it.title || '')}">`);
+        ti.addEventListener('change', () => API.listUpdate('links.items', it.id, { title: ti.value }));
+        const ui = el(`<input class="rwa-input" placeholder="https://\u2026" style="flex:2 1 200px" value="${esc(it.url || '')}">`);
+        ui.addEventListener('change', () => API.listUpdate('links.items', it.id, { url: ui.value }));
+        const rm = el('<button type="button" class="rwa-icon-btn rwa-del">\u2715</button>');
+        rm.addEventListener('click', () => { if (confirm(`Delete link "${it.title || ''}"?`)) API.listRemove('links.items', it.id); });
+        row.append(th, up, ti, ui, rm);
+        row.addEventListener('dragstart', () => row.classList.add('rwa-dragging'));
+        row.addEventListener('dragend', () => { row.classList.remove('rwa-dragging'); const ids = qa('.rwa-sub-item', wrap).map((r) => r.dataset.id); API.listReorder('links.items', ids); });
+        wrap.appendChild(row);
+      });
+    };
+    wrap.addEventListener('dragover', (e) => { e.preventDefault(); const d = q('.rwa-dragging', wrap); if (!d) return;
+      const after = [...qa('.rwa-sub-item:not(.rwa-dragging)', wrap)].find((c) => e.clientY < c.getBoundingClientRect().top + c.offsetHeight / 2);
+      if (after) wrap.insertBefore(d, after); else wrap.appendChild(d); });
+    add.addEventListener('click', () => API.listAdd('links.items', { title: 'New link', url: '', icon: '' }));
+    render(); API.subscribe('links.items', render);
+  }
+
+  /* ---------- PROJECTS EDITORS ---------- */
+  function projectFolderEditor(host, fid) {
+    const folder = () => (API.get('projects.folders') || []).find((f) => f.id === fid);
+    if (!folder()) { host.appendChild(el('<p class="rwa-empty">Folder not found.</p>')); return; }
+    host.appendChild(group('Folder name'));
+    const tf = field('Name', `<input class="rwa-input" value="${esc(folder().title)}">`); const tinp = q('input', tf);
+    tinp.addEventListener('input', () => API.update('projects.folders', (arr) => arr.map((f) => f.id === fid ? { ...f, title: tinp.value } : f)));
+    host.appendChild(tf);
+    host.appendChild(group('Contents'));
+    host.appendChild(el('<p class="rwa-editor-hint">Text, images, videos, audio and files each use the right editor. Drag \u2630 to reorder.</p>'));
+    const mutate = (fn) => API.update('projects.folders', (arr) => arr.map((f) => f.id === fid ? { ...f, items: fn(deepClone(f.items || [])) } : f));
+    const items = () => { const f = folder(); return f ? (f.items || []) : []; };
+    const wrap = el('<div class="rwa-sub-list"></div>'); host.appendChild(wrap);
+    const render = () => {
+      wrap.innerHTML = '';
+      if (!items().length) wrap.appendChild(el('<p class="rwa-empty">Empty folder.</p>'));
+      items().forEach((it) => {
+        const row = el('<div class="rwa-sub-item" draggable="true" style="flex-wrap:wrap"></div>'); row.dataset.id = it.id;
+        row.appendChild(el('<span class="rwa-drag">\u2630</span>'));
+        row.appendChild(el(`<span class="rwa-tool-chip">${it.type}</span>`));
+        if (it.type === 'text') {
+          const ta = el(`<textarea class="rwa-textarea" style="flex:1 1 100%">${esc(it.text || '')}</textarea>`);
+          ta.addEventListener('change', () => mutate((a) => a.map((x) => x.id === it.id ? { ...x, text: ta.value } : x)));
+          row.appendChild(ta);
+        } else {
+          const si = el(`<input class="rwa-input" placeholder="path" value="${esc(it.src || '')}">`);
+          si.addEventListener('change', () => mutate((a) => a.map((x) => x.id === it.id ? { ...x, src: si.value } : x)));
+          row.appendChild(si);
+          if (it.type === 'file' || it.type === 'audio') {
+            const ti = el(`<input class="rwa-input" placeholder="Button/label" style="flex:1 1 120px" value="${esc(it.title || '')}">`);
+            ti.addEventListener('change', () => mutate((a) => a.map((x) => x.id === it.id ? { ...x, title: ti.value } : x)));
+            row.appendChild(ti);
+          }
+          const up = el('<button type="button" class="rwa-icon-btn" title="Upload">\u2191</button>');
+          up.addEventListener('click', () => { const fi = document.createElement('input'); fi.type = 'file';
+            fi.accept = it.type === 'image' ? 'image/*' : it.type === 'video' ? 'video/*' : it.type === 'audio' ? 'audio/*' : '*/*';
+            fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => mutate((a) => a.map((x) => x.id === it.id ? { ...x, src: r.result } : x)); r.readAsDataURL(f); }; fi.click(); });
+          row.appendChild(up);
+        }
+        const rm = el('<button type="button" class="rwa-icon-btn rwa-del">\u2715</button>');
+        rm.addEventListener('click', () => { if (confirm('Delete this item?')) mutate((a) => a.filter((x) => x.id !== it.id)); });
+        row.appendChild(rm);
+        row.addEventListener('dragstart', () => row.classList.add('rwa-dragging'));
+        row.addEventListener('dragend', () => { row.classList.remove('rwa-dragging'); const ids = qa('.rwa-sub-item', wrap).map((r) => r.dataset.id); mutate((a) => ids.map((id) => a.find((x) => x.id === id)).filter(Boolean)); });
+        wrap.appendChild(row);
+      });
+    };
+    wrap.addEventListener('dragover', (e) => { e.preventDefault(); const d = q('.rwa-dragging', wrap); if (!d) return;
+      const after = [...qa('.rwa-sub-item:not(.rwa-dragging)', wrap)].find((c) => e.clientY < c.getBoundingClientRect().top + c.offsetHeight / 2);
+      if (after) wrap.insertBefore(d, after); else wrap.appendChild(d); });
+    const addRow = el('<div class="rwa-swatch-row" style="margin-top:8px"></div>');
+    [['text','+ Text'],['image','+ Image'],['video','+ Video'],['audio','+ Audio'],['file','+ File']].forEach(([type, lbl]) => {
+      const b = el(`<button type="button" class="rwa-add-btn" style="margin:0">${lbl}</button>`);
+      b.addEventListener('click', () => mutate((a) => { a.push(type === 'text' ? { id: uid(), type, text: '' } : { id: uid(), type, src: '', title: '' }); return a; }));
+      addRow.appendChild(b);
+    });
+    host.appendChild(addRow);
+    const del = el('<button type="button" class="rwa-btn rwa-btn-danger" style="margin-top:18px">Delete this folder</button>');
+    del.addEventListener('click', () => { if (confirm(`Delete folder "${folder().title}" and all its contents? This cannot be undone.`)) { API.update('projects.folders', (arr) => arr.filter((f) => f.id !== fid)); openCategory('projects'); } });
+    host.appendChild(del);
+    render(); API.subscribe('projects.folders', render);
+  }
+  function projectAddFolder(host) {
+    host.appendChild(el('<p class="rwa-editor-hint">Create a new folder. It appears in the More Projects pop-up immediately.</p>'));
+    const f = field('Folder name', '<input class="rwa-input" placeholder="e.g. Sketchbook">'); const inp = q('input', f); host.appendChild(f);
+    const btn = el('<button type="button" class="rwa-btn rwa-btn-primary">Create folder</button>'); const st = status(host);
+    btn.addEventListener('click', () => { const name = inp.value.trim(); if (!name) return st('Type a name first', false);
+      API.update('projects.folders', (arr) => { arr.push({ id: uid('fld'), title: name, items: [] }); return arr; });
+      st('Created \u2713'); openCategory('projects'); });
+    host.appendChild(btn);
+  }
+
+  /* ---------- MUSIC EDITORS ---------- */
+  function musicQueueEditor(host) {
+    host.appendChild(el('<p class="rwa-editor-hint">Songs play in order: 1 \u2192 2 \u2192 3 \u2026 Drag \u2630 to reorder.</p>'));
+    rangeField(host, 'Volume', 'audio.volume', 0, 1, 0.05, '');
+    const wrap = el('<div class="rwa-sub-list"></div>'); host.appendChild(wrap);
+    const add = el('<button type="button" class="rwa-add-btn">+ Add track</button>'); host.appendChild(add);
+    const render = () => {
+      wrap.innerHTML = '';
+      const items = API.get('audio.queue') || [];
+      if (!items.length) wrap.appendChild(el('<p class="rwa-empty">No tracks yet.</p>'));
+      items.forEach((it, i) => {
+        const row = el('<div class="rwa-sub-item" draggable="true" style="flex-wrap:wrap"></div>'); row.dataset.id = it.id;
+        row.appendChild(el(`<span class="rwa-drag">\u2630</span>`));
+        row.appendChild(el(`<span class="rwa-tool-chip">${i + 1}</span>`));
+        const ti = el(`<input class="rwa-input" placeholder="Song name" style="flex:1 1 140px" value="${esc(it.title || '')}">`);
+        ti.addEventListener('change', () => API.listUpdate('audio.queue', it.id, { title: ti.value }));
+        const si = el(`<input class="rwa-input" placeholder="Audio Sound/song.mp3" style="flex:2 1 200px" value="${esc(it.src || '')}">`);
+        si.addEventListener('change', () => API.listUpdate('audio.queue', it.id, { src: si.value }));
+        const up = el('<button type="button" class="rwa-icon-btn" title="Replace file">\u2191</button>');
+        up.addEventListener('click', () => { const fi = document.createElement('input'); fi.type = 'file'; fi.accept = 'audio/*';
+          fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => API.listUpdate('audio.queue', it.id, { src: r.result, title: it.title || f.name }); r.readAsDataURL(f); }; fi.click(); });
+        const rm = el('<button type="button" class="rwa-icon-btn rwa-del">\u2715</button>');
+        rm.addEventListener('click', () => { if (confirm(`Remove track "${it.title || ''}"?`)) API.listRemove('audio.queue', it.id); });
+        row.append(ti, si, up, rm);
+        row.addEventListener('dragstart', () => row.classList.add('rwa-dragging'));
+        row.addEventListener('dragend', () => { row.classList.remove('rwa-dragging'); const ids = qa('.rwa-sub-item', wrap).map((r) => r.dataset.id); API.listReorder('audio.queue', ids); });
+        wrap.appendChild(row);
+      });
+    };
+    wrap.addEventListener('dragover', (e) => { e.preventDefault(); const d = q('.rwa-dragging', wrap); if (!d) return;
+      const after = [...qa('.rwa-sub-item:not(.rwa-dragging)', wrap)].find((c) => e.clientY < c.getBoundingClientRect().top + c.offsetHeight / 2);
+      if (after) wrap.insertBefore(d, after); else wrap.appendChild(d); });
+    add.addEventListener('click', () => API.listAdd('audio.queue', { title: 'New track', src: '' }));
+    render(); API.subscribe('audio.queue', render);
+  }
+  function systemSoundsEditor(host) {
+    [['Click sound', 'audio.systemClick'], ['Close sound', 'audio.systemClose']].forEach(([label, path]) => {
+      const card = el(`<div class="rwa-img-card"><span class="rwa-img-meta">
+        <span class="rwa-img-name">${label}</span>
+        <input class="rwa-input" type="text" value="${esc(API.get(path))}">
+        <span class="rwa-img-actions">
+          <button type="button" class="rwa-btn rwa-btn-primary rwa-up">Replace</button>
+          <button type="button" class="rwa-btn rwa-btn-ghost rwa-play">\u25b6 Preview</button>
+        </span></span></div>`);
+      const inp = q('input', card), st = status(host);
+      q('input', card).addEventListener('change', () => { API.set(path, inp.value); st('Saved \u2713'); });
+      q('.rwa-up', card).addEventListener('click', () => { const fi = document.createElement('input'); fi.type = 'file'; fi.accept = 'audio/*';
+        fi.onchange = () => { const f = fi.files[0]; if (!f) return; const r = new FileReader(); r.onload = () => { API.set(path, r.result); inp.value = r.result; st('Saved \u2713'); }; r.readAsDataURL(f); }; fi.click(); });
+      q('.rwa-play', card).addEventListener('click', () => { try { new Audio(API.get(path)).play(); } catch (e) { st('Cannot preview', false); } });
+      host.appendChild(card);
+    });
+  }
+  function spotifyEditor(host) {
+    host.appendChild(el('<p class="rwa-editor-hint">Click the three stars 3 times on the homepage to open the floating player. Paste a Spotify <b>embed</b> URL (open.spotify.com/embed/\u2026).</p>'));
+    textField(host, 'Spotify embed URL', 'audio.spotifyUrl');
+    const btn = el('<button type="button" class="rwa-btn rwa-btn-primary">Apply to player</button>');
+    btn.addEventListener('click', () => { const f = q('#rwaSpotifyMini iframe'); if (f) f.src = API.get('audio.spotifyUrl'); alert('Player updated \u2713'); });
+    host.appendChild(btn);
+       host.appendChild(group('Player colors \u2014 Light mode'));
+    colorField(host, 'Body color', 'audio.spotifyLightBody');
+    colorField(host, 'Title bar color', 'audio.spotifyLightHead');
+    host.appendChild(group('Player colors \u2014 Dark mode'));
+    colorField(host, 'Body color', 'audio.spotifyDarkBody');
+    colorField(host, 'Title bar color', 'audio.spotifyDarkHead'); 
+  }
+
+  /* ---------- APPS EDITORS ---------- */
+  function appPainting(host) {
+    host.appendChild(group('App icon'));
+    imageControl(host, 'Painting app icon', () => API.get('apps.painting.icon'), (v) => API.set('apps.painting.icon', v));
+    host.appendChild(group('Canvas size'));
+    numberField(host, 'Canvas width (px)', 'apps.painting.canvasW');
+    numberField(host, 'Canvas height (px)', 'apps.painting.canvasH');
+    host.appendChild(group('Existing tools'));
+    const tools = el('<div class="rwa-tools-list"></div>');
+    (API.get('apps.painting.tools') || []).forEach((t) => tools.appendChild(el(`<span class="rwa-tool-chip">${esc(t)}</span>`)));
+    host.appendChild(tools);
+  }
+  function appFeedback(host) {
+    host.appendChild(group('App icon'));
+    imageControl(host, 'Feedback app icon', () => API.get('apps.feedback.icon'), (v) => API.set('apps.feedback.icon', v));
+    host.appendChild(group('Where feedback is sent'));
+    textField(host, 'Recipient email', 'apps.feedback.recipient');
+    host.appendChild(el('<p class="rwa-editor-hint">This form opens your device email app pre-filled to the address above (no server needed, nothing to break). True automatic sending would require a backend email service (e.g. a form endpoint) \u2014 not possible from a plain static page.</p>'));
+  }
+  function appNotes(host) {
+    host.appendChild(group('App icon'));
+    imageControl(host, 'Notes app icon', () => API.get('apps.notes.icon'), (v) => API.set('apps.notes.icon', v));
+    host.appendChild(group('Sticky note colors'));
+    const row = el('<div class="rwa-swatch-row"></div>');
+    const render = () => { row.innerHTML = '';
+      (API.get('apps.notes.colors') || []).forEach((c, i) => {
+        const cell = el(`<div style="display:flex;flex-direction:column;gap:4px;align-items:center"><input type="color" value="${esc(c)}"><button class="rwa-icon-btn rwa-del" title="Remove">\u2715</button></div>`);
+        q('input', cell).addEventListener('input', (e) => API.update('apps.notes.colors', (a) => { a[i] = e.target.value; return a; }));
+        q('button', cell).addEventListener('click', () => API.update('apps.notes.colors', (a) => a.filter((_, j) => j !== i)));
+        row.appendChild(cell);
+      });
+      const add = el('<button class="rwa-add-btn" style="margin:0">+ Add color</button>');
+      add.addEventListener('click', () => API.update('apps.notes.colors', (a) => { a.push('#ffffff'); return a; }));
+      row.appendChild(add);
+    };
+    render(); API.subscribe('apps.notes.colors', render); host.appendChild(row);
+    host.appendChild(group('Sticky note background image'));
+    imageControl(host, 'Background image (optional)', () => API.get('apps.notes.bgImage'), (v) => API.set('apps.notes.bgImage', v));
+  }
+    function appGoals(host) {
+    host.appendChild(group('App icon'));
+    imageControl(host, 'Goals app icon', () => API.get('apps.goals.icon'), (v) => API.set('apps.goals.icon', v));
+    host.appendChild(group('Homepage star icon'));
+    imageControl(host, 'Goal-bar star icon', () => API.get('apps.goals.starIcon'), (v) => API.set('apps.goals.starIcon', v));
+    host.appendChild(group('Live preview'));
+    const prev = el('<div class="rwa-widget-preview" style="display:flex;align-items:center;gap:10px;border-radius:999px;padding:10px 18px"><div style="width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.45);flex:0 0 auto"></div><div style="flex:1;min-width:0"><div style="font-weight:700;font-size:13px;margin-bottom:5px">My goal</div><div class="rwa-wp-bar" style="margin-top:0"><div class="rwa-wp-fill"></div></div></div></div>');
+    const paint = () => { const g = API.get('apps.goals'), dark = isDark();
+      prev.style.background = dark ? `linear-gradient(135deg, ${g.darkFrom}, ${g.darkTo})` : `linear-gradient(135deg, ${g.lightFrom}, ${g.lightTo})`;
+      q('.rwa-wp-fill', prev).style.background = `linear-gradient(90deg, ${g.barFrom||'#ffe27a'}, ${g.barTo||'#ffb84d'})`; };
+    paint(); API.subscribe('apps.goals', paint); host.appendChild(prev);
+    host.appendChild(group('Progress bar color (the yellow bar)'));
+    colorField(host, 'Bar start', 'apps.goals.barFrom');
+    colorField(host, 'Bar end', 'apps.goals.barTo');
+    host.appendChild(group('Widget body \u2014 Light mode'));
+    colorField(host, 'Start color', 'apps.goals.lightFrom');
+    colorField(host, 'End color', 'apps.goals.lightTo');
+    host.appendChild(group('Widget body \u2014 Dark mode'));
+    colorField(host, 'Start color', 'apps.goals.darkFrom');
+    colorField(host, 'End color', 'apps.goals.darkTo');
+  }
+   function appPet(host) {
+    host.appendChild(group('App icon'));
+    imageControl(host, 'Pet app icon', () => API.get('apps.pet.icon'), (v) => API.set('apps.pet.icon', v));
+    host.appendChild(group('Room background picture'));
+    host.appendChild(el('<p class="rwa-editor-hint">This picture shows as the room behind your pet (like a pet-game room). Leave empty for no room.</p>'));
+     imageControl(host, 'Room background', () => API.get('apps.pet.roomBg'), (v) => API.set('apps.pet.roomBg', v));
+    host.appendChild(group('Text & tips'));
+    textField(host, 'Help tooltip (the \u201c?\u201d bubble)', 'apps.pet.helpText', true);
+    textField(host, 'Hint under the pet', 'apps.pet.hintText');
+    host.appendChild(group('Moods'));
+    host.appendChild(el('<p class="rwa-editor-hint">Every mood shows its image and name. New moods appear in the Pet app instantly.</p>'));
+    listEditor(host, 'apps.pet.moods', { fields: ['label'], image: 'img', addLabel: '+ Add mood' });
+  }
+
+  /* ---------- 3-STAR SPOTIFY MINI-PLAYER ---------- */
+     function bindSpotify() {
+    const star = document.getElementById('music-stars');
+    const mini = document.getElementById('rwaSpotifyMini');
+    if (!mini) return;
+    const iframe = mini.querySelector('iframe');
+    if (iframe && !iframe.src) iframe.src = API.get('audio.spotifyUrl') || '';
+
+    const POS = 'rwa-sp-pos';
+    const place = () => {
+      let p = null; try { p = JSON.parse(localStorage.getItem(POS) || 'null'); } catch (_) {}
+      if (!p) return;
+      const w = mini.offsetWidth || 320, h = mini.offsetHeight || 200;
+      const x = Math.max(6, Math.min(p.xPct * window.innerWidth,  window.innerWidth  - w - 6));
+      const y = Math.max(6, Math.min(p.yPct * window.innerHeight, window.innerHeight - h - 6));
+      mini.style.left = x + 'px'; mini.style.top = y + 'px';
+      mini.style.right = 'auto'; mini.style.bottom = 'auto';
+      mini.classList.toggle('pinned', !!p.pinned);
+    };
+    const save = () => {
+      const r = mini.getBoundingClientRect();
+      localStorage.setItem(POS, JSON.stringify({
+        xPct: r.left / window.innerWidth, yPct: r.top / window.innerHeight,
+        pinned: mini.classList.contains('pinned')
+      }));
+    };
+    place();
+    window.addEventListener('resize', place);
+    window.addEventListener('orientationchange', () => setTimeout(place, 150));
+
+    const open = () => { if (iframe && !iframe.src) iframe.src = API.get('audio.spotifyUrl'); mini.classList.add('show'); place(); };
+    let clicks = 0, timer = null;
+    star && star.addEventListener('click', () => {
+      clicks++; clearTimeout(timer); timer = setTimeout(() => clicks = 0, 700);
+      if (clicks >= 3) { clicks = 0; open(); }
+    });
+    // stays open across reloads if it was pinned
+    try { if ((JSON.parse(localStorage.getItem(POS) || 'null') || {}).pinned) open(); } catch (_) {}
+
+    const closeBtn = mini.querySelector('.rwa-sp-close');
+    closeBtn && closeBtn.addEventListener('click', () => mini.classList.remove('show'));
+    const pinBtn = mini.querySelector('.rwa-sp-pin');
+    pinBtn && pinBtn.addEventListener('click', () => { mini.classList.toggle('pinned'); save(); });
+
+    const head = mini.querySelector('.rwa-sp-head');
+    let drag = false, dx = 0, dy = 0;
+    head && head.addEventListener('pointerdown', (e) => {
+      if (e.target.closest('button')) return;
+      if (mini.classList.contains('pinned')) return;
+      drag = true; dx = e.clientX - mini.offsetLeft; dy = e.clientY - mini.offsetTop;
+      head.setPointerCapture(e.pointerId);
+    });
+    head && head.addEventListener('pointermove', (e) => {
+      if (!drag) return;
+      const w = mini.offsetWidth, h = mini.offsetHeight;
+      mini.style.left = Math.max(6, Math.min(e.clientX - dx, window.innerWidth  - w - 6)) + 'px';
+      mini.style.top  = Math.max(6, Math.min(e.clientY - dy, window.innerHeight - h - 6)) + 'px';
+      mini.style.bottom = 'auto'; mini.style.right = 'auto';
+    });
+    head && head.addEventListener('pointerup', (e) => { drag = false; save(); try { head.releasePointerCapture(e.pointerId); } catch (_) {} });
+    head && head.addEventListener('dblclick', (e) => { e.stopPropagation(); mini.classList.toggle('pinned'); save(); });
+  }
+})(window);
+
+});
+</script>
+  </body>
+  </html>
