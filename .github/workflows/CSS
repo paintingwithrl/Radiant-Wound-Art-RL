@@ -1268,6 +1268,7 @@ body.popup-open .sticky-note{ pointer-events:none; }
 .note-list-item .nli-preview{
   display:-webkit-box;
   -webkit-line-clamp:3;
+  line-clamp:3;
   -webkit-box-orient:vertical;
   overflow:hidden;
   font-size:14px;
@@ -1276,6 +1277,7 @@ body.popup-open .sticky-note{ pointer-events:none; }
   word-wrap:break-word;
   min-height:1.4em;
 }
+
 .note-list-item .nli-preview:empty::before{
   content:"(empty note)";
   opacity:.5;
@@ -3169,7 +3171,13 @@ body.dark #rwaSpotifyMini .rwa-sp-head{
 /* Player hugs the embed — no leftover purple strip */
 #rwaSpotifyMini{ line-height:0; padding:0; }
 #rwaSpotifyMini .rwa-sp-head{ line-height:1.2; }
-#rwaSpotifyMini iframe{ display:block; width:100%; height:152px; border:0; margin:0; vertical-align:top; }
+#rwaSpotifyMini iframe{
+  display:block;
+  width:100%;
+  height:152px;
+  border:0;
+  margin:0;
+}
 
 @media (max-width:900px) and (orientation:portrait), (max-width:768px){
   #rwaSpotifyMini{
